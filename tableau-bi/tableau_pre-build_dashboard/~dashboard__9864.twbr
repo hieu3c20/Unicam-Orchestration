@@ -1,0 +1,974 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0208.0338                               -->
+<workbook original-version='18.1' source-build='2024.3.4 (20243.25.0208.0338)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='papers+ (ceur_ws) (2)' inline='true' name='federated.0gq8xsl04e9q0417xkyzy0ot4kex' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mongodb://atlas-sql-67d7d9b7c571837ff3bc5cc4-z3giy.a.query.mongodb.net/ceur_ws?ssl=true&amp;authSource=admin' name='mongodb_jdbc.0wuwfwx0537a87126t7bl1mtf8sw'>
+            <connection authentication='auth-user-pass' class='mongodb_jdbc' dbname='ceur_ws' one-time-sql='' server='mongodb://atlas-sql-67d7d9b7c571837ff3bc5cc4-z3giy.a.query.mongodb.net/ceur_ws?ssl=true&amp;authSource=admin' username='admin' v-log-directory='' v-logdir-option='' v-loglevel='OFF' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='mongodb_jdbc.0wuwfwx0537a87126t7bl1mtf8sw' name='papers' table='[papers]' type='table' />
+          <relation connection='mongodb_jdbc.0wuwfwx0537a87126t7bl1mtf8sw' name='volumes' table='[volumes]' type='table' />
+        </relation>
+        <cols>
+          <map key='[_id (volumes)]' value='[volumes].[_id]' />
+          <map key='[_id]' value='[papers].[_id]' />
+          <map key='[author]' value='[papers].[author]' />
+          <map key='[fulltitle]' value='[volumes].[fulltitle]' />
+          <map key='[loctime]' value='[volumes].[loctime]' />
+          <map key='[pages]' value='[papers].[pages]' />
+          <map key='[pubyear]' value='[volumes].[pubyear]' />
+          <map key='[title (volumes)]' value='[volumes].[title]' />
+          <map key='[title]' value='[papers].[title]' />
+          <map key='[url]' value='[papers].[url]' />
+          <map key='[urn]' value='[volumes].[urn]' />
+          <map key='[volacronym]' value='[volumes].[volacronym]' />
+          <map key='[voleditor]' value='[volumes].[voleditor]' />
+          <map key='[volnr]' value='[volumes].[volnr]' />
+          <map key='[voltitle]' value='[volumes].[voltitle]' />
+          <map key='[volume_id]' value='[papers].[volume_id]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[_id]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;objectId&quot;</attribute>
+            </attributes>
+            <object-id>[papers_0D806CA31D4D4CE293838217A71932C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[author]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>author</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;array&quot;</attribute>
+            </attributes>
+            <object-id>[papers_0D806CA31D4D4CE293838217A71932C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pages</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pages]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>pages</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[papers_0D806CA31D4D4CE293838217A71932C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[papers_0D806CA31D4D4CE293838217A71932C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[papers_0D806CA31D4D4CE293838217A71932C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volume_id</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[volume_id]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>volume_id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;objectId&quot;</attribute>
+            </attributes>
+            <object-id>[papers_0D806CA31D4D4CE293838217A71932C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[_id (volumes)]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;objectId&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fulltitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fulltitle]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>fulltitle</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loctime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[loctime]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>loctime</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pubyear</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pubyear]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>pubyear</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title (volumes)]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>urn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[urn]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>urn</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volacronym</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[volacronym]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>volacronym</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>voleditor</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[voleditor]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>voleditor</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;array&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volnr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[volnr]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>volnr</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>voltitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[voltitle]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>voltitle</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='papers' datatype='table' name='[__tableau_internal_object_id__].[papers_0D806CA31D4D4CE293838217A71932C0]' role='measure' type='quantitative' />
+      <column caption='volumes' datatype='table' name='[__tableau_internal_object_id__].[volumes_B0B2B4714A544AACA2877A1446314985]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Viet Nam&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='papers' id='papers_0D806CA31D4D4CE293838217A71932C0'>
+            <properties context=''>
+              <relation connection='mongodb_jdbc.0wuwfwx0537a87126t7bl1mtf8sw' name='papers' table='[papers]' type='table' />
+            </properties>
+          </object>
+          <object caption='volumes' id='volumes_B0B2B4714A544AACA2877A1446314985'>
+            <properties context=''>
+              <relation connection='mongodb_jdbc.0wuwfwx0537a87126t7bl1mtf8sw' name='volumes' table='[volumes]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[volume_id]' />
+              <expression op='[_id (volumes)]' />
+            </expression>
+            <first-end-point object-id='papers_0D806CA31D4D4CE293838217A71932C0' />
+            <second-end-point object-id='volumes_B0B2B4714A544AACA2877A1446314985' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+    <datasource caption='papers+ (ceur_ws)' inline='true' name='federated.0xu56zv01c8jyc1d1mm8e1o2yopb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mongodb://atlas-sql-67d7d9b7c571837ff3bc5cc4-z3giy.a.query.mongodb.net/ceur_ws?ssl=true&amp;authSource=admin' name='mongodb_jdbc.1cvj86i13txr1411tij7g0qjzmii'>
+            <connection authentication='auth-user-pass' class='mongodb_jdbc' dbname='ceur_ws' one-time-sql='' server='mongodb://atlas-sql-67d7d9b7c571837ff3bc5cc4-z3giy.a.query.mongodb.net/ceur_ws?ssl=true&amp;authSource=admin' username='admin' v-log-directory='' v-logdir-option='' v-loglevel='OFF' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='mongodb_jdbc.1cvj86i13txr1411tij7g0qjzmii' name='papers' table='[papers]' type='table' />
+          <relation connection='mongodb_jdbc.1cvj86i13txr1411tij7g0qjzmii' name='volumes' table='[volumes]' type='table' />
+        </relation>
+        <cols>
+          <map key='[_id (volumes)]' value='[volumes].[_id]' />
+          <map key='[_id]' value='[papers].[_id]' />
+          <map key='[author]' value='[papers].[author]' />
+          <map key='[fulltitle]' value='[volumes].[fulltitle]' />
+          <map key='[loctime]' value='[volumes].[loctime]' />
+          <map key='[pages]' value='[papers].[pages]' />
+          <map key='[pubyear]' value='[volumes].[pubyear]' />
+          <map key='[title (volumes)]' value='[volumes].[title]' />
+          <map key='[title]' value='[papers].[title]' />
+          <map key='[url]' value='[papers].[url]' />
+          <map key='[urn]' value='[volumes].[urn]' />
+          <map key='[volacronym]' value='[volumes].[volacronym]' />
+          <map key='[voleditor]' value='[volumes].[voleditor]' />
+          <map key='[volnr]' value='[volumes].[volnr]' />
+          <map key='[voltitle]' value='[volumes].[voltitle]' />
+          <map key='[volume_id]' value='[papers].[volume_id]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[_id]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;objectId&quot;</attribute>
+            </attributes>
+            <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[author]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>author</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;array&quot;</attribute>
+            </attributes>
+            <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pages</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pages]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>pages</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volume_id</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[volume_id]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>volume_id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;objectId&quot;</attribute>
+            </attributes>
+            <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[_id (volumes)]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;objectId&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fulltitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fulltitle]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>fulltitle</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loctime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[loctime]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>loctime</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pubyear</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pubyear]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>pubyear</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title (volumes)]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>urn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[urn]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>urn</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volacronym</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[volacronym]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>volacronym</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>voleditor</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[voleditor]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>voleditor</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;array&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volnr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[volnr]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>volnr</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>voltitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[voltitle]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>voltitle</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='papers' datatype='table' name='[__tableau_internal_object_id__].[papers_CC45DBB0A527410BB0CB41457DE2A322]' role='measure' type='quantitative' />
+      <column caption='volumes' datatype='table' name='[__tableau_internal_object_id__].[volumes_5C1663599C044C38B2E468B74F55B8A3]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/ASUS/Documents/TRV/UNICAM/Big Data/ceur-ws.org-orchestration_/tableau-bi/visualization/papers+ (ceur_ws).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/17/2025 09:29:25 AM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='papers_CC45DBB0A527410BB0CB41457DE2A322' table='[Extract].[papers_CC45DBB0A527410BB0CB41457DE2A322]' type='table' />
+            <relation name='volumes_5C1663599C044C38B2E468B74F55B8A3' table='[Extract].[volumes_5C1663599C044C38B2E468B74F55B8A3]' type='table' />
+          </relation>
+          <cols>
+            <map key='[_id (volumes)]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[_id]' />
+            <map key='[_id]' value='[papers_CC45DBB0A527410BB0CB41457DE2A322].[_id]' />
+            <map key='[author]' value='[papers_CC45DBB0A527410BB0CB41457DE2A322].[author]' />
+            <map key='[fulltitle]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[fulltitle]' />
+            <map key='[loctime]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[loctime]' />
+            <map key='[pages]' value='[papers_CC45DBB0A527410BB0CB41457DE2A322].[pages]' />
+            <map key='[pubyear]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[pubyear]' />
+            <map key='[title (volumes)]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[title]' />
+            <map key='[title]' value='[papers_CC45DBB0A527410BB0CB41457DE2A322].[title]' />
+            <map key='[url]' value='[papers_CC45DBB0A527410BB0CB41457DE2A322].[url]' />
+            <map key='[urn]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[urn]' />
+            <map key='[volacronym]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[volacronym]' />
+            <map key='[voleditor]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[voleditor]' />
+            <map key='[volnr]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[volnr]' />
+            <map key='[voltitle]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[voltitle]' />
+            <map key='[volume_id]' value='[papers_CC45DBB0A527410BB0CB41457DE2A322].[volume_id]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='papers+ (ceur_ws)' increment-value='%null%' refresh-type='create' rows-inserted='57632' timestamp-start='2025-03-17 09:29:22.634' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[_id]</local-name>
+              <parent-name>[papers_CC45DBB0A527410BB0CB41457DE2A322]</parent-name>
+              <remote-alias>_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>papers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54652</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>author</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[author]</local-name>
+              <parent-name>[papers_CC45DBB0A527410BB0CB41457DE2A322]</parent-name>
+              <remote-alias>author</remote-alias>
+              <ordinal>1</ordinal>
+              <family>papers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42366</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pages</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pages]</local-name>
+              <parent-name>[papers_CC45DBB0A527410BB0CB41457DE2A322]</parent-name>
+              <remote-alias>pages</remote-alias>
+              <ordinal>2</ordinal>
+              <family>papers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7650</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[papers_CC45DBB0A527410BB0CB41457DE2A322]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>3</ordinal>
+              <family>papers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54652</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[url]</local-name>
+              <parent-name>[papers_CC45DBB0A527410BB0CB41457DE2A322]</parent-name>
+              <remote-alias>url</remote-alias>
+              <ordinal>4</ordinal>
+              <family>papers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54652</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>volume_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[volume_id]</local-name>
+              <parent-name>[papers_CC45DBB0A527410BB0CB41457DE2A322]</parent-name>
+              <remote-alias>volume_id</remote-alias>
+              <ordinal>5</ordinal>
+              <family>papers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5355</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[_id (volumes)]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>_id</remote-alias>
+              <ordinal>6</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2980</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fulltitle</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fulltitle]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>fulltitle</remote-alias>
+              <ordinal>7</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2249</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>loctime</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[loctime]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>loctime</remote-alias>
+              <ordinal>8</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1750</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pubyear</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pubyear]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>pubyear</remote-alias>
+              <ordinal>9</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title (volumes)]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>10</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2980</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>urn</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[urn]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>urn</remote-alias>
+              <ordinal>11</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2980</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>volacronym</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[volacronym]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>volacronym</remote-alias>
+              <ordinal>12</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2832</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>voleditor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[voleditor]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>voleditor</remote-alias>
+              <ordinal>13</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1827</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>volnr</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[volnr]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>volnr</remote-alias>
+              <ordinal>14</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2980</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>voltitle</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[voltitle]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>voltitle</remote-alias>
+              <ordinal>15</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1789</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Viet Nam&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='papers' id='papers_CC45DBB0A527410BB0CB41457DE2A322'>
+            <properties context=''>
+              <relation connection='mongodb_jdbc.1cvj86i13txr1411tij7g0qjzmii' name='papers' table='[papers]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='papers_CC45DBB0A527410BB0CB41457DE2A322' table='[Extract].[papers_CC45DBB0A527410BB0CB41457DE2A322]' type='table' />
+            </properties>
+          </object>
+          <object caption='volumes' id='volumes_5C1663599C044C38B2E468B74F55B8A3'>
+            <properties context=''>
+              <relation connection='mongodb_jdbc.1cvj86i13txr1411tij7g0qjzmii' name='volumes' table='[volumes]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='volumes_5C1663599C044C38B2E468B74F55B8A3' table='[Extract].[volumes_5C1663599C044C38B2E468B74F55B8A3]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[volume_id]' />
+              <expression op='[_id (volumes)]' />
+            </expression>
+            <first-end-point object-id='papers_CC45DBB0A527410BB0CB41457DE2A322' />
+            <second-end-point object-id='volumes_5C1663599C044C38B2E468B74F55B8A3' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='papers+ (ceur_ws)' name='federated.0xu56zv01c8jyc1d1mm8e1o2yopb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xu56zv01c8jyc1d1mm8e1o2yopb'>
+            <column datatype='string' name='[author]' role='dimension' type='nominal' />
+            <column-instance column='[author]' derivation='None' name='[none:author:nk]' pivot='key' type='nominal' />
+            <column-instance column='[pubyear]' derivation='None' name='[none:pubyear:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[pubyear]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xu56zv01c8jyc1d1mm8e1o2yopb].[none:author:nk]'>
+            <groupfilter function='level-members' level='[none:author:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0xu56zv01c8jyc1d1mm8e1o2yopb].[none:author:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0xu56zv01c8jyc1d1mm8e1o2yopb].[none:author:nk]' value='336' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0xu56zv01c8jyc1d1mm8e1o2yopb].[none:author:nk]</rows>
+        <cols>[federated.0xu56zv01c8jyc1d1mm8e1o2yopb].[none:pubyear:nk]</cols>
+      </table>
+      <simple-id uuid='{0AC611F3-D31A-4336-96F5-C18B42513186}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='63'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CFAE88BA-2774-4FAE-B3B7-D4AF2E184FB8}' />
+    </window>
+  </windows>
+</workbook>

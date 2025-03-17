@@ -1,0 +1,1478 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0208.0338                               -->
+<workbook original-version='18.1' source-build='2024.3.4 (20243.25.0208.0338)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='papers+ (ceur_ws) (2)' inline='true' name='federated.0gq8xsl04e9q0417xkyzy0ot4kex' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mongodb://atlas-sql-67d7d9b7c571837ff3bc5cc4-z3giy.a.query.mongodb.net/ceur_ws?ssl=true&amp;authSource=admin' name='mongodb_jdbc.0wuwfwx0537a87126t7bl1mtf8sw'>
+            <connection authentication='auth-user-pass' class='mongodb_jdbc' dbname='ceur_ws' one-time-sql='' server='mongodb://atlas-sql-67d7d9b7c571837ff3bc5cc4-z3giy.a.query.mongodb.net/ceur_ws?ssl=true&amp;authSource=admin' username='admin' v-log-directory='' v-logdir-option='' v-loglevel='OFF' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='mongodb_jdbc.0wuwfwx0537a87126t7bl1mtf8sw' name='papers' table='[papers]' type='table' />
+          <relation connection='mongodb_jdbc.0wuwfwx0537a87126t7bl1mtf8sw' name='volumes' table='[volumes]' type='table' />
+        </relation>
+        <cols>
+          <map key='[_id (volumes)]' value='[volumes].[_id]' />
+          <map key='[_id]' value='[papers].[_id]' />
+          <map key='[author]' value='[papers].[author]' />
+          <map key='[fulltitle]' value='[volumes].[fulltitle]' />
+          <map key='[loctime]' value='[volumes].[loctime]' />
+          <map key='[pages]' value='[papers].[pages]' />
+          <map key='[pubyear]' value='[volumes].[pubyear]' />
+          <map key='[title (volumes)]' value='[volumes].[title]' />
+          <map key='[title]' value='[papers].[title]' />
+          <map key='[url]' value='[papers].[url]' />
+          <map key='[urn]' value='[volumes].[urn]' />
+          <map key='[volacronym]' value='[volumes].[volacronym]' />
+          <map key='[voleditor]' value='[volumes].[voleditor]' />
+          <map key='[volnr]' value='[volumes].[volnr]' />
+          <map key='[voltitle]' value='[volumes].[voltitle]' />
+          <map key='[volume_id]' value='[papers].[volume_id]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[_id]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;objectId&quot;</attribute>
+            </attributes>
+            <object-id>[papers_0D806CA31D4D4CE293838217A71932C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[author]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>author</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;array&quot;</attribute>
+            </attributes>
+            <object-id>[papers_0D806CA31D4D4CE293838217A71932C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pages</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pages]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>pages</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[papers_0D806CA31D4D4CE293838217A71932C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[papers_0D806CA31D4D4CE293838217A71932C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[papers_0D806CA31D4D4CE293838217A71932C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volume_id</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[volume_id]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>volume_id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;objectId&quot;</attribute>
+            </attributes>
+            <object-id>[papers_0D806CA31D4D4CE293838217A71932C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[_id (volumes)]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;objectId&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fulltitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fulltitle]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>fulltitle</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loctime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[loctime]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>loctime</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pubyear</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pubyear]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>pubyear</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title (volumes)]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>urn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[urn]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>urn</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volacronym</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[volacronym]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>volacronym</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>voleditor</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[voleditor]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>voleditor</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;array&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volnr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[volnr]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>volnr</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>voltitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[voltitle]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>voltitle</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_B0B2B4714A544AACA2877A1446314985]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='papers' datatype='table' name='[__tableau_internal_object_id__].[papers_0D806CA31D4D4CE293838217A71932C0]' role='measure' type='quantitative' />
+      <column caption='volumes' datatype='table' name='[__tableau_internal_object_id__].[volumes_B0B2B4714A544AACA2877A1446314985]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Viet Nam&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='papers' id='papers_0D806CA31D4D4CE293838217A71932C0'>
+            <properties context=''>
+              <relation connection='mongodb_jdbc.0wuwfwx0537a87126t7bl1mtf8sw' name='papers' table='[papers]' type='table' />
+            </properties>
+          </object>
+          <object caption='volumes' id='volumes_B0B2B4714A544AACA2877A1446314985'>
+            <properties context=''>
+              <relation connection='mongodb_jdbc.0wuwfwx0537a87126t7bl1mtf8sw' name='volumes' table='[volumes]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[volume_id]' />
+              <expression op='[_id (volumes)]' />
+            </expression>
+            <first-end-point object-id='papers_0D806CA31D4D4CE293838217A71932C0' />
+            <second-end-point object-id='volumes_B0B2B4714A544AACA2877A1446314985' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+    <datasource caption='papers+ (ceur_ws)' inline='true' name='federated.0xu56zv01c8jyc1d1mm8e1o2yopb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mongodb://atlas-sql-67d7d9b7c571837ff3bc5cc4-z3giy.a.query.mongodb.net/ceur_ws?ssl=true&amp;authSource=admin' name='mongodb_jdbc.1cvj86i13txr1411tij7g0qjzmii'>
+            <connection authentication='auth-user-pass' class='mongodb_jdbc' dbname='ceur_ws' one-time-sql='' server='mongodb://atlas-sql-67d7d9b7c571837ff3bc5cc4-z3giy.a.query.mongodb.net/ceur_ws?ssl=true&amp;authSource=admin' username='admin' v-log-directory='' v-logdir-option='' v-loglevel='OFF' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='mongodb_jdbc.1cvj86i13txr1411tij7g0qjzmii' name='papers' table='[papers]' type='table' />
+          <relation connection='mongodb_jdbc.1cvj86i13txr1411tij7g0qjzmii' name='volumes' table='[volumes]' type='table' />
+        </relation>
+        <cols>
+          <map key='[_id (volumes)]' value='[volumes].[_id]' />
+          <map key='[_id]' value='[papers].[_id]' />
+          <map key='[author]' value='[papers].[author]' />
+          <map key='[fulltitle]' value='[volumes].[fulltitle]' />
+          <map key='[loctime]' value='[volumes].[loctime]' />
+          <map key='[pages]' value='[papers].[pages]' />
+          <map key='[pubyear]' value='[volumes].[pubyear]' />
+          <map key='[title (volumes)]' value='[volumes].[title]' />
+          <map key='[title]' value='[papers].[title]' />
+          <map key='[url]' value='[papers].[url]' />
+          <map key='[urn]' value='[volumes].[urn]' />
+          <map key='[volacronym]' value='[volumes].[volacronym]' />
+          <map key='[voleditor]' value='[volumes].[voleditor]' />
+          <map key='[volnr]' value='[volumes].[volnr]' />
+          <map key='[voltitle]' value='[volumes].[voltitle]' />
+          <map key='[volume_id]' value='[papers].[volume_id]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[_id]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;objectId&quot;</attribute>
+            </attributes>
+            <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[author]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>author</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;array&quot;</attribute>
+            </attributes>
+            <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pages</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pages]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>pages</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volume_id</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[volume_id]</local-name>
+            <parent-name>[papers]</parent-name>
+            <remote-alias>volume_id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;objectId&quot;</attribute>
+            </attributes>
+            <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[_id (volumes)]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;objectId&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fulltitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fulltitle]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>fulltitle</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loctime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[loctime]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>loctime</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pubyear</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pubyear]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>pubyear</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title (volumes)]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>urn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[urn]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>urn</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volacronym</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[volacronym]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>volacronym</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>voleditor</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[voleditor]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>voleditor</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;array&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volnr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[volnr]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>volnr</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>voltitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[voltitle]</local-name>
+            <parent-name>[volumes]</parent-name>
+            <remote-alias>voltitle</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='papers' datatype='table' name='[__tableau_internal_object_id__].[papers_CC45DBB0A527410BB0CB41457DE2A322]' role='measure' type='quantitative' />
+      <column caption='volumes' datatype='table' name='[__tableau_internal_object_id__].[volumes_5C1663599C044C38B2E468B74F55B8A3]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/ASUS/Documents/TRV/UNICAM/Big Data/ceur-ws.org-orchestration_/tableau-bi/visualization/papers+ (ceur_ws).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/17/2025 09:29:25 AM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='papers_CC45DBB0A527410BB0CB41457DE2A322' table='[Extract].[papers_CC45DBB0A527410BB0CB41457DE2A322]' type='table' />
+            <relation name='volumes_5C1663599C044C38B2E468B74F55B8A3' table='[Extract].[volumes_5C1663599C044C38B2E468B74F55B8A3]' type='table' />
+          </relation>
+          <cols>
+            <map key='[_id (volumes)]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[_id]' />
+            <map key='[_id]' value='[papers_CC45DBB0A527410BB0CB41457DE2A322].[_id]' />
+            <map key='[author]' value='[papers_CC45DBB0A527410BB0CB41457DE2A322].[author]' />
+            <map key='[fulltitle]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[fulltitle]' />
+            <map key='[loctime]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[loctime]' />
+            <map key='[pages]' value='[papers_CC45DBB0A527410BB0CB41457DE2A322].[pages]' />
+            <map key='[pubyear]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[pubyear]' />
+            <map key='[title (volumes)]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[title]' />
+            <map key='[title]' value='[papers_CC45DBB0A527410BB0CB41457DE2A322].[title]' />
+            <map key='[url]' value='[papers_CC45DBB0A527410BB0CB41457DE2A322].[url]' />
+            <map key='[urn]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[urn]' />
+            <map key='[volacronym]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[volacronym]' />
+            <map key='[voleditor]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[voleditor]' />
+            <map key='[volnr]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[volnr]' />
+            <map key='[voltitle]' value='[volumes_5C1663599C044C38B2E468B74F55B8A3].[voltitle]' />
+            <map key='[volume_id]' value='[papers_CC45DBB0A527410BB0CB41457DE2A322].[volume_id]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='papers+ (ceur_ws)' increment-value='%null%' refresh-type='create' rows-inserted='57632' timestamp-start='2025-03-17 09:29:22.634' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[_id]</local-name>
+              <parent-name>[papers_CC45DBB0A527410BB0CB41457DE2A322]</parent-name>
+              <remote-alias>_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>papers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54652</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>author</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[author]</local-name>
+              <parent-name>[papers_CC45DBB0A527410BB0CB41457DE2A322]</parent-name>
+              <remote-alias>author</remote-alias>
+              <ordinal>1</ordinal>
+              <family>papers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42366</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pages</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pages]</local-name>
+              <parent-name>[papers_CC45DBB0A527410BB0CB41457DE2A322]</parent-name>
+              <remote-alias>pages</remote-alias>
+              <ordinal>2</ordinal>
+              <family>papers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7650</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[papers_CC45DBB0A527410BB0CB41457DE2A322]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>3</ordinal>
+              <family>papers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54652</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[url]</local-name>
+              <parent-name>[papers_CC45DBB0A527410BB0CB41457DE2A322]</parent-name>
+              <remote-alias>url</remote-alias>
+              <ordinal>4</ordinal>
+              <family>papers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54652</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>volume_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[volume_id]</local-name>
+              <parent-name>[papers_CC45DBB0A527410BB0CB41457DE2A322]</parent-name>
+              <remote-alias>volume_id</remote-alias>
+              <ordinal>5</ordinal>
+              <family>papers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5355</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[papers_CC45DBB0A527410BB0CB41457DE2A322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[_id (volumes)]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>_id</remote-alias>
+              <ordinal>6</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2980</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fulltitle</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fulltitle]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>fulltitle</remote-alias>
+              <ordinal>7</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2249</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>loctime</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[loctime]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>loctime</remote-alias>
+              <ordinal>8</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1750</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pubyear</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pubyear]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>pubyear</remote-alias>
+              <ordinal>9</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title (volumes)]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>10</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2980</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>urn</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[urn]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>urn</remote-alias>
+              <ordinal>11</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2980</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>volacronym</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[volacronym]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>volacronym</remote-alias>
+              <ordinal>12</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2832</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>voleditor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[voleditor]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>voleditor</remote-alias>
+              <ordinal>13</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1827</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>volnr</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[volnr]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>volnr</remote-alias>
+              <ordinal>14</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2980</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>voltitle</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[voltitle]</local-name>
+              <parent-name>[volumes_5C1663599C044C38B2E468B74F55B8A3]</parent-name>
+              <remote-alias>voltitle</remote-alias>
+              <ordinal>15</ordinal>
+              <family>volumes</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1789</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[volumes_5C1663599C044C38B2E468B74F55B8A3]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Viet Nam&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='papers' id='papers_CC45DBB0A527410BB0CB41457DE2A322'>
+            <properties context=''>
+              <relation connection='mongodb_jdbc.1cvj86i13txr1411tij7g0qjzmii' name='papers' table='[papers]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='papers_CC45DBB0A527410BB0CB41457DE2A322' table='[Extract].[papers_CC45DBB0A527410BB0CB41457DE2A322]' type='table' />
+            </properties>
+          </object>
+          <object caption='volumes' id='volumes_5C1663599C044C38B2E468B74F55B8A3'>
+            <properties context=''>
+              <relation connection='mongodb_jdbc.1cvj86i13txr1411tij7g0qjzmii' name='volumes' table='[volumes]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='volumes_5C1663599C044C38B2E468B74F55B8A3' table='[Extract].[volumes_5C1663599C044C38B2E468B74F55B8A3]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[volume_id]' />
+              <expression op='[_id (volumes)]' />
+            </expression>
+            <first-end-point object-id='papers_CC45DBB0A527410BB0CB41457DE2A322' />
+            <second-end-point object-id='volumes_5C1663599C044C38B2E468B74F55B8A3' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='papers+ (ceur_ws)' name='federated.0xu56zv01c8jyc1d1mm8e1o2yopb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xu56zv01c8jyc1d1mm8e1o2yopb'>
+            <column datatype='string' name='[author]' role='dimension' type='nominal' />
+            <column-instance column='[author]' derivation='None' name='[none:author:nk]' pivot='key' type='nominal' />
+            <column-instance column='[pubyear]' derivation='None' name='[none:pubyear:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[pubyear]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xu56zv01c8jyc1d1mm8e1o2yopb].[none:author:nk]'>
+            <groupfilter function='level-members' level='[none:author:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0xu56zv01c8jyc1d1mm8e1o2yopb].[none:author:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0xu56zv01c8jyc1d1mm8e1o2yopb].[none:author:nk]' value='268' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0xu56zv01c8jyc1d1mm8e1o2yopb].[none:author:nk]</rows>
+        <cols>[federated.0xu56zv01c8jyc1d1mm8e1o2yopb].[none:pubyear:nk]</cols>
+      </table>
+      <simple-id uuid='{0AC611F3-D31A-4336-96F5-C18B42513186}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <fields>
+                  <field>[federated.0xu56zv01c8jyc1d1mm8e1o2yopb].[none:author:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>&quot;[\&quot; A.E. Schulz\&quot;, \&quot;B. David O&apos;Gwynn\&quot;, \&quot;J. Kepner\&quot;, \&quot;P.C. Trepagnier\&quot;]&quot;</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xu56zv01c8jyc1d1mm8e1o2yopb].[none:author:nk]</field>
+            <field>[federated.0xu56zv01c8jyc1d1mm8e1o2yopb].[none:pubyear:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CFAE88BA-2774-4FAE-B3B7-D4AF2E184FB8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nOy9Z5Ak6Xmg92Rmee+rurqr2k+b6bFrZj3MEgBBEjSnuyNDp4ijQlJIfxT6
+      pQj95E9FnOJEnng66UTFMRhkHI8kjgCxMLsYYHd2/EzP9LT3trqrury36fSjZ3u3sQ3sEgJ2
+      FjP1RHREV2Xm932ZWV/m+77fawRd13W6dHlGEZ/0ALp0eZJ0J0CXZ5ruBOjyTNOdAF2eaboT
+      oMszTXcCdHmm6U6ALs800h/90R/90ZMexK8iD25dwxGOs7OxRiAQAGB7fZVyuYho9WA2nPJs
+      0TVm7t3C5AmztzbPTqqASWvwYHYRh9PJ7INpNJMTj8N6ap/lXIr5tQROo8q96RkcXj9LM/ep
+      ySJ+t5l3fnidwaFBBOGUrnWVG+9dp2cgzuLDe2QqLTqVLAur2/idJm7ceYjJ6sT1U/pOJzbZ
+      PqwitEs8mF0iEPAwfe8umsnJweYiu6kC0Z4Qp3RNOZdi5tEcgsnOxtIjyi2o5vZZ3UnhtsCd
+      ezN4Qj1YjNIpR2vMPbjPXqaI2KnwaHGDoNfB3dt3MDoDpLdmqehOPA7zqePOHOzwaG4em9vL
+      7PQdFMlBeneVvUwJ2hUMpx7V5RPJl8o0HjyilD+gUChiBAqlHBazAaOvH5fl4zdTUxUq+TTF
+      SpnVnSx2tc7DvAMbCteuXmXkhS/y8PZN+n/vG6d3ajSwvbZOO2tg5NxFfvgPf0do9AqJR9NU
+      DlxkyxU0HcRTfoVap03yIInczLGdVTAk5llD5ELcx63peWotFV346QKBIGlsbWyzq1Z47eIg
+      f/VXf8tLX/ttHt6+hqjpaBi4cGkK0ynH2twBot4k8w9vYfUOc7A0gyBIRGwS//DeNt9443lu
+      Ti/w9Tcun9r36Ng4b33vKkmrkeeGQvynb36LN3/zn/Dg3m1GfQpJPcpA2HXqsd5gFPfeGrd+
+      /A79l95k4f4PEUwB7DQYHPlqVwT6eRGMdkxanZaik81mOUym+KQlddFgwmW3gWThwnicnXSJ
+      ZrVGLBrEGZtEyayjiKf9hI5wu10IAly+8jIbC4/wD54nZK5Ta6nUWh2Khwkqjc6px0pmGw6r
+      ESx+JmIOMuUmr7x4kbnlLXoGJ/jaF17g4fT0z+jbDcDrr7zI/YfzTL3yJZT0GgoCimDCKMgo
+      6unHJjfm2a6aeOPKBZROC10X0DWNtqJhN0lUqnWMptOf4KDxve9+n6//9jcwCjr1VgeX0069
+      WkEwmHC73D91zABLD26i+MZ48WycVr2KLpnQNQVZ01m4dw2h6wrx85FOZ/A5TOzkGkjtEm3d
+      jM9tQxIF7N4QVuPHny1Ku8HMzCOMzgBuk4po8xN0Sixv7DM+Psz66joj42dxWE+fBLubK+wf
+      FhgcGiSTyTM5eYa1pUWig2P4XDYOUylCkZ5T3wCtWpGHs0v4In0IzRLuSD9iu0y+qTPU62dp
+      eZ2RiSmcp/ats7Y4R67SZLA/RrZUZ2K4j8XFVUYmz1JM7dDQLJwZjp8qAqX3t9lJ5uiND9Iu
+      p7H5+zCrNdJVmZG+AAsrW0xOTZ0uNmpt7t19iMnuZigWZCdVZPLMAEsLiwyOTbC5MENbcvDC
+      xSnEU058d2OFTLHKwPAYuYMtwgNjtEspGroVoVn4cALc3UygaNqpF/5Z5VzY+6SH0OWXzLEO
+      cC9bpdWscLC2hb83itzRcIZDiGhkNzcJDI0iCJDfXkHVjQQGhxEFkGslCqk0voERjEaJRjGH
+      yenD8JHZXM1lcAZCADQKOVRVwxE8UpjUTp16oYTJ6aaws4XFF8LbE0EAqqldGo0O/v4hDIaT
+      MnU1k8IR6kGpFlGNdsxGgfzOJtZAL4LaxOj0UtnfxuDw4w76f66L8/JIHPE0jbLLU8NJJVhp
+      Y3D4kJtNNB0EoFPYZX9pFUffIFazgWIyRfzSlWNLQ3JxBv/4ZbRWhYPVPeRGGcnqwBEIoyOh
+      tetU0km0do1Svoo74DshK3cqFdptGZu7Qb2mUC+t4IlEEAQo7iUInZskMTeL021FFS1Igo4g
+      6LRrdTS1TW51GffZV6gcrmDpP0dqcRp/rJ9KcgdrdAyTUSC3s4Vcr2J1u2g0FbweM4VcDVGQ
+      MTs8NEolTHYPocH+z+zCd/l8cKoVyB2NHf+f2djBE7GT3d6nbzSG2mnRqFRwmk2IooG+iy+R
+      Wb5PKduk9+UvUtuawR7wUkgmkCxu5Frh6EnfquEI9eGJHD2NdVVFF0WsgR6sAdDbWTr1Kmar
+      hKYqCNLR0ESDCU1uUis0abY62B02NB2QZRq1MoG+KAqgKSqSyYggCHh646RyB4ho7M7MYLUZ
+      0GSZQq5CNOpgazmDyw6uWA/prR2swQFqmSSBeO9Rn1LXOPas8LE7resaus7jJ7yOIzaKOxKl
+      lNylkDjAE43SadSpJGs4ekZoFXNg9jL4yiWKiXUs/l4sTie+mJ1mIY013IvRJNEqZTEYG+j4
+      EYDU4kMCE5cxfWD7ley4fE7Mbi+V5A7uvhFckTD57V36zl+muLuBLeTEbpNQsINcRzIIVHMF
+      3HYLlqlLZDZX8A9PIAgCkclLZLY2CQyewSzK6FY39lIRd1+IbHYBT28Ms92BP2bAYHOjWEUK
+      iT1AJzAw/Fnegy5PkGMl+OZ2ElnpUEgk8MYGEZ9SA2mzmMPo8mOQPlm2fzkWQujqAE81x2+A
+      S2EPWrvO/RRMOA3IsorH70UCDvb3iUYjlKstPG7HT22sVa+CyYbFKCG36qxv7eL2heiNBD7V
+      YMrlMrqu4/Z4jvSPRp1qq43T5aVePCSVLdLXP4zLbgZVplTv4HHZj48vFQqIoojN7cYgCHSa
+      NRTRQqdZw+PxHO3U4/vUF0dRlE+9b5dfTU6IQGqnhmD1kkzs0VR1fH4v7eIOf/PNq/y3/83v
+      8NZb13juxecR5Sq1lspgvIf1zV3GRgdZ30pg6pRJ63YmRkbpC7qw0WAjkaGSS2BwBJErWRqy
+      jijA0ECc9Y0tYn1RDtJ5fMEI9WIWnaMJALCf2KXYkDl/wYvT4+fezZv4I1HWFmfp7w3y9q15
+      Ll2YwmlQKDQ0lGqRerGAoSfC5OgUjcQ8ecsY+yt3uXL5PJt7aUYGomzupYlF/Rxkygz1+lnf
+      2mcgFmE/nccf6qU/+ukmbJdffY59gWRZRuvUOSzLXDg7Rk84jAA8vPk+klWk2jEiSlaqxSTZ
+      fBGTXKeiCpT2V8m2TNQqJQyCRrivj9WNfUbjIa7fneXLr19mZXmdzZ09GvUayCpGk0q13qGQ
+      S7C3lcQSHuBga5VXXnmJ8ON+AbyBINGeCJIgUC/sc9AwQ3ab4NRlZm9cxeTrp5JNoKsys8tr
+      WEUdEDn7/BgPp7cI2hXm1lPkchl8Tgt7G4s0cFCtFBAEKOTLCLrM4e4mqUwJe7iXva1tRobi
+      T+p+dPmM+QRzh469Z5jffXOMuZmHKAYZlz+OAQWbARqqjjsYxRHwUVGrWB1+vC4XfRGo5A6Q
+      zDZ2EklEyUA81ofNJGE2mjBbJVqNNnZ3gIDfhtvnxK5Hj3u9ef0aL7z8OqaPrCVsbOzgsDjw
+      hYfZmXvImfNXqCkStM10GhX64/30eB1IBpHV2XWmzl/C3DzkxRciFA+9oCsEemIEAh60ZgGr
+      zYVRrKLqOu5ABIfTg9vjwig3mVtYBFXl3IXzp65sdnl6OFaC2+02mtzk0cIq5y5c5JSV/M+M
+      druD2fzTfWK6dPlFcfwGMJvNaKKOxWzGIIkI6BhNJgSg2WxisVgRhCNRyWg0ntqYpirUG00s
+      VhtGw8e9IXVNRdE4ddtHMZvNaKqCLohIooAsy4Bw3K8sy8emWkmSUFUNo/HjL7MP+pNEnXr9
+      5LhkWcZgMCIIR6ZfWVYQReljK85dnm5OKsHNEi2Dg5XZaYpNjTfeeBW9dsi/+uP/yP/8v/xP
+      ZHbWuHZ3lq998QqFho7XYSKfL2E2CoT7z1DbfcCd7Q6i1uLFcyOUOyIem+FoH5OIVWzz/lKO
+      N1+/glrLIktOzJKG3SSiCEa2d/eZODPA6sYuDqVEyREn7jaxvLyA1d3HCxfHAHg4fR9ZA62e
+      x2B14e0boVNK0z86Ri2XxmBzkU6liActzOx3uBCW+dFsAbMkc2GsHyxelh7d58qLz3GQrRD3
+      m5meW2f4wosMhn+2d2GXp4sT3qBy5ZDp3Rovnxs53uHhj77Fo70cZ6aeo1TuoDfSxKMhpqeX
+      sPd4ORewYAgOslc2MuXK8a1rq4ydu4BXqnN/dg1/yM14wIIUHGJpcQVX7xlaB/NolhAmuUJD
+      EJgMmNlr2JA1Ga2ew2A0IWgws53jf/wf/hCH6fSn8nvf/VtWczr/4re/wJ37M1QVjXwyRyxk
+      A5MVm92JbPZzISzz3dsJRob7EFoVlraS9PidDMR7efjwEV/+vT8g6j49EKTL082JiDCtXSNZ
+      7hALf2Ar19nNlPmt3/waexsbKK06GM3oSguTyYYr4KfP68TmCdHRJAI2HV/sDOXsIXK7jtnq
+      wOP30etzYvWEaDZa1GtFQtF+jHIF3erGb5PIl6uEB8bo5PdxBnqQzA56/W7C0TAtRSTkdaLr
+      Krdu3SUe/9BNo1wqMjk2yMrGDppowuWyEwn3MhoPUWiLDMeCqKKFgNOAPTDE5cl+lpdXsDu9
+      eD0O2q0GBqOFvoEh7CYDcqPI9Nw62UyadCpJONJzanRVl6eH4zeApmmorSq3Hi7y0pUrnOaa
+      /UTRVaq1Fk6n/ZP3/TmRWzUUyXaqL3+Xp5NjHaDVaqGrAuGAj3a7jfo5/A2YTAba7fYvtM3U
+      /h6eUBSryQCCEVGT+QV30eVzzImfudLIs50uszRzj2vXbx95WbaL/PGf/N90WgW+//Y1iuUq
+      lXKRbC5PNpNF01RSqUM0XSeb2ecHP7wGrTJ//Kd/RrNe5H/93/4PVLlFOptndfoG89sHtDoy
+      mcMU9VabcrFALl8gk82hym0OH7d5sLnAu3fmAfjx97/Jvdk1bt64Rr5YplzIUas3eOubf83K
+      dhJNafH//ts/JddQSKcOKJQq5NIpao0W2XSSXL5IOpUkl8/TaHWo1+vcv3eX23fuoDez7KTK
+      T+Lad/kc8DHbodVmZ+LM+PHGlZkH9PeHWEkUqNWbXH//fTSljUGUCHiM3KpAu1nE6fBgD8Xp
+      dDqARshjZfrBEp5QmGvvvkfAaWQ9WSYu2Xhvdx+plaXYkTDITSRJxC4YaJgUarki3nAfkYCH
+      jmxAk5uUmgLF7TVErcXURI2//rsf4O+JomsisYiPfGINf18v8/MbRKQ0BSlEJ7NNqqrx0niI
+      naqZHmOFrGqjVa1ikARef+0VABrZTcpdl59nllMFHaPR+NjmrpNuwAvPXSC9tYY/EMRhM+Nw
+      eQgGAoRCflxOF4HeEc4MRqlXikgGIyDSNzjMfjpHzG/H5bCRq7TwulyEIyHUVpm6YsJpM+Ly
+      +ggGAgT9PlxuD4Pj5+gNuCmVyhgNEqX0HoG+Ucwi9EQCZMpNggE/56fO4vX7sVstbO3nOX/p
+      Mq1Sgvtz60ScGrm6jsdh4u6DRSJ+O9ML60QjPUiNJD3D5z5yjl2eZY6V4GazidIocW16kddf
+      feWJrgT/stA1lXv3pnnhpSvHM3/pwXUc8UvEgz/dy7XL08uJdQBd11EU5XiFtEuXp52TSnA1
+      zbffucbC7ENu3LqPAqDW+bM/+wsUrcONm3eP97154+Ynt660uHHnw1wzW3M32c59ehOLXC9w
+      68Y1lrfTR1/oOg+mH3B/eppWKcmf//W3kZtlbj9YeLxd5ebNW5/Y7s0bN5m/f5Nc7aM5dFRu
+      3Lz9qcfW5engY0pwb3yAoaGe443bs9OEegJspqsUcyn+n3/7b9BdPTi0MtWWSqeYIDh8EWsn
+      y9W7S0wNhREEAaMzRKVSpi3r/Nm/+1Ne/41/ilwpkClOk3E7KeUrVA5XkTz9tAqHKKKReMhJ
+      vd5EFswM9vlR7FGmzl3C5nQCoANjE6MIupHl2duEnBKpQo3sYYL/80+u4owOQTlBQzWS23rE
+      1Mtf4tG1tykLTuJhLx6biee++FUOdjdIOYLUa+9SG+xnfnmHTluhJau89lle/S5PnFMlfbvd
+      jt1uB3RW9/OEA05WHs2ArmPzBHntpeex2p3IrQYTU2eZn33E1m6SvqAbRBMjw3FqlSpmqwNR
+      gEj/GGP9EQDCI2eZefcdYj0usEeQlDYuXxCfy4qq6ZiNEhOTw/zw5iJTo3FcbheSrrK2vokg
+      CDjsLuwOK4l0FrdNYnFpDV1T8YT6eOm58zjcHpr1KmenJpmdncVk9/CF115maijIft2A3SBg
+      dfnxGWVqHZWdnT3kThuD2YZBFFhcXGBhcfGzvAddniAndAClluN7N+f4+q99maNYdR1ZVjAY
+      jShyBxDQNRVVF49ianUdXddQdQEJHQ0BSRIRRQEdgU67faxPGI1GVEUG0YDSaWMym2g2Wycs
+      MZIo0OooWC1m2u0OFstRurxOvchhWSMe/TC/jyzLGA0GOrKMIIho6lHbonCkyxxlljAioiGr
+      kNycR3cPMBoLIMsykiigaDqKLGM0mVE6bUSDEeFx0haTqeuO/SxwwgrUzZLY5VnjWATSdR2l
+      luM777zL5toKM7OLR0qw1uE7//A9VF1hbn7p+MC5uflPbl3tMLe4cvxxd3mO67dusrGX/tQD
+      PK0fuZrjwYOHHOSqjwevsbS4wPLKGu1Sku+9d/djiWrn5+Y+dZ9dnh1OKMG6rhLu7cfrd+MR
+      BAxAen2WRkfhoFhnP7FLam8TzeJGrmSo1BrorTLO8CAOscHsyh49PiuyouIMRMmlD6m2VNbm
+      prnw6leoHmYIDA+yMvuAlVkVlz9ANrFDJNJDsVbDbTXjiY9TziQxqE1q2JCreWqlLNWGitFm
+      pc9lRAoOEovH8Xodj8etEQyHMRgtzD66h9JU2N+YZSlRwWIw0WmUOMyXyaZ2sXmCZA/TOPw9
+      BGwaW+k6AYuKLTTApbNnnsQ96PIEOVUJ9vn9+H0+QGdxM0U86mRpdhGUFol0kb5ohE6rTr3Z
+      IRrtYWN9jbW1TZrVIvVmh3hfiMT2Dp5IDIOoY/P1MBoPAxrVhs4rz58hX1OJBH1Y3SE8JhnB
+      FmBwYorZq9/C6/ewn6+Rz2UBjXKtjU1sE3QYeX89z2A0SCgYwIBCKp1FEA0EA0E8LgepXA6H
+      WmZ2NUE43k8tm6ItWHDazLQUkecn+0kVm/RE/Gxs7VIs5uiJRtlcX0dDZ3//gP39/c/0JnR5
+      chzrAI1GA7ma4TvX5/jG137tWAkulyu43G7KpSIgonbqtHQTdrMBdA1VadNUDFhEmY5uwG41
+      YTEZkXWJfCaFw+3DIAq43S7qlQomhwOjKJBK7GJ0eI+2Oe1sb20S7hukXs4TCIbYTyRwuD2I
+      6BhFjVJDIxpyk85WiISPlOFq/oBcy8xg71EaE13XqVSquJ1WsrkCdpeHTqtNu1FGlSzYzEY8
+      bjeHyQSi1Y3aKCNanZi0NjVFJNYTJJ8vAOD3/3wJdbv8anE8AVT1p1Q36NLlKeakGbRR5Ort
+      Oc4Ox6m0FMbGRzGg8v57t3jtC6+wubnL6MjQJ7eqtFhP5Bgd7PvYpns3b3D2hZdI7W4zMjr6
+      6Uapq2xubiFIJoYeZ3De2dqio+kYlAaHxTrjU+dJ7yeYmBj7qc206yVm5leIDZ6hN+wDOmys
+      p3DbwOjtwWPrmj6fNU4qwUobd6gXwWDA5TAiAcWdeZY2E5x5rsnK8gqFw31UkwOj1kY3WvA7
+      jGwnS9iNKq1mi4EzY2yvLZNvGUgnNjE7vZQPt4kMXWRy0MPO5iqqK0Z+Z4VmrUS23MbvMlNt
+      6/hcZg4Pi8RiYQ4OUlisVmL9cbL5Gj67gNH5oVhiMBoxCAIb88tc/MKXeP/d6wR8brbWFtk8
+      KOA06bSaLXoGBjjcTxIbncJQXKesWLns/yDwvcOt928R8EDv5CVm02miQ+OP9ZUuzwKnKsF9
+      fTFifX0IwMz8JqP9Lh7NLEOnyr3ZFSRJQq6kyddlVlfX2dhYo1CqEnKamJldIDYyjtLIMr+y
+      iyQKVFoCZ8f62VqcxxiMsb16ZNqcvn8Pk0HEZtJZ2j5kbvo+RqPEzINpFMFAwOfiB9/5AYHe
+      OPHBM/QE7FQqFXSgLxajr+/oDaPIHSSDkXw+y+rqGtsba+QKFcJuC3fu3qfU1kHXCA2d43zc
+      wds/uk65VAHA7nLj97rZWZ0n11BA61Cp1CiXu0EyzwIfywrxo0d7fOW1F5FEAJ2DZJJoT5T9
+      /QSCaKBTK6IYHdjNRjRNoV2r0BYseBxW7BYDmtFCYmsLT6iHZjGNxRPCKOj09kY5TCUJhntI
+      Huwf+QsJCofFFl6PExMaolFiP5lneDDK+uYu45Nn2d3aZPLsJAKg6zI3bz7g1ddeOs7Yltzd
+      IJmvMXn2LIVshnatSAszHsdRUThZNLK7ucXQmQnMtFhe22Jg9AzlfJGhoSgH+wXsFh3BZGNz
+      fY3Y4AD1SgdNbzM0OPgEbkmXz5LjCdDpdNA1hUz2yApzWqG1Ll2eNo51AEVRUFtVltY2mNRU
+      Gm2VaF8PEjrLSyuMT4yRTueIREKf3Kra4TBfJRI6aUqsF7NkGzphl4H9XONUJfmjHB4eEolE
+      yGcOcQYimD4isKUPU+iCgUg4CEAunaat6/RGIuxtrhPsH6acyxCJHDnhyZ0OhseZ7j5oW9dU
+      BEHEFwyfyEPa5dnhhBKsyQ3MriDlchlZP1IQ6pl1fnTtPpHBfh7OzBHv8aKZnBhREEQJs6SS
+      Lss4TBq1WpORsVHWF+ZIt4z0+y1Y3AFaxSRmbxxLdZ87yRYX+ozMrFbpVNK0sGA1KLQ6Alar
+      CQEdXWmhmdysz90n1BNDrpfx9Y/gs5vZ3klw5uwkhUwWS+DDhLrFSgUQIAJrKwsclGVK6R3O
+      DPWTr6sk5qcZ/+JXESpZZNFOam+DYMCLKBnR0Nnd2mL03PMEXJbP+BZ0eZKc+tgbGhllbHQU
+      AZidWWFkwMns4jZ0StydWaVer1NJbZAoNkkmD1lfXeHg4BC3QeHG7Wmio+MotRQLqwnq9Spb
+      +zkmRuOAgMtqpNAGGw0S2RaVVIKl9Q3OTp1lZ3eHne1tFFmmkC9gtjsxySXKDZl7syssLyzx
+      4pVxHk6vM3H+PIPRwLED3+joKKOjRxntDFYvYqdER9VIJlOsrK0SCPYQ7w1wmM6xsnbkn1Qu
+      FimXSxweJKnX82ztZtB1/fivy9PPT6wEp5nZq/Pi2Q9s/TobG1sMDw+ytr6GKBhpVHIYXQFM
+      AqiqQrteoa5KBD1O3DYTssFMYnsXpy9Io5jGE+5DlzuMjg5TTCVoYqDWbqM0FCS9RhMrdpPI
+      yMgID+/fQTXY8NsNlNpHk8VmhFobHDYjHU0guZ9k4sIlfA4Lutrm6nt3+MqbXzhxUjvbO4S8
+      Nua3s1i0Gk3dzHCPm3xbopo9QLK5cVqMGEQQRAkBjXQuRzQ+gV0tUlUEKh2JqZGfLaJ1+dXn
+      pBKsdlhcXmN8curzlxnup/BhQb8uXf7xHOsAJpMJrSPTUTRUuU1b0XB53UjAYSpFOBKmWq3j
+      cjlPNFAqlT6svwVUKhVcLtdP7bBSqeB0uT5WeEJX2lTbOi77hzK43G6QKzcx6G1sDhftdgeH
+      28dRrlyNSqmCYDDhdNioFHM0VYlw4Ki6e7VSQRDAanci/YRJS27VkQUzzVoZp92CKpqPMsN1
+      eeY4kRxXqRdI1kVahUMOcwV6oz10Srv8u//wbS6+eJ5rP76BQWuRr7aplIpUymU21jcQtTaJ
+      TJlgwMvVd97hzNgwuztJyqUCnUaZ1a0kDrPOwtoOi3MzWCxm2o0qq5t7aK062zs7iHKZv393
+      FofNSiW3T6pQY/rH/0C+oXH1R9fw2G0kMwV6+6JIArQrWR4trCDZvNjFOj++NU9/X4TDvS2S
+      +RoLj6ZJHSSwe3wsLy1hknRW17fo6BJ2Lcf7swfcuvp9BLWNYrSxubaK2x/qWoOeMU597J29
+      cOn4/0d3HzIYdzGzvA/tEj+6ccjA0CCOTo6Kcwi5VMIiqTQFO7r+ge4gMz+/DLSolXO43SG2
+      drf4xtd/nZ3FO8wsbiOX9nD7QxxsNrl4eZyZlQSBSB8rC3cQcGM3tDC7wzx3+TLtjsaFy5dP
+      jNHsCvHqq0cm2WpmHbsnjM/rZmV+hrXdDGH/UazAvfffxez20MinMfWOszA3R/+vf5HG1v9F
+      /MwUG5kKocptVLOTg3SBsf5PYebt8tTwiTXCzOFBfv+rZ3nwcA774Bk8vjzenh6UpguTpiFE
+      o/icZrZTJQCcVgPL60lcdpGm7uJsNEhTM3PGY2FmfoWBsYuIaBAap62bCPsVnE4PkR4ZzexD
+      cwyht+u08BJwCJiMBqIfWXtIrs9StvQxEftwjcERGMS2fpvltW1UTac/HsPntmKQBOxWK3vp
+      An3+CLhcWLQwIOHwxbhyZZL3761w7kyYlUQOB1UWN9so9TIXzk/9Mq53l88Zx0qwoihocoPp
+      2WUuXX7uc5sZrt1qYbZ0bfVdfjEcvwE6nQ6aoh7J160migCiJCHwQT0tA5qmAUd1uX4STVWR
+      VRWT0fipqqtrj1dhATRdR/pIaXpNVdH5sH9d19A0HUEQEYBGs4kkCKiafqKml67raJp2Ynyq
+      qh5ZiQQRsWsu6vITnKgTrNTzJCpQTKyzspUg3h9Hb2T5V3/y57zw8gWuvnOdfPYQs0liP5XD
+      ZoTl9V2CQT8z7/2QzXyend08olxBQeS73/42Xp+PcrlMrdlB0ts0ZZX19U32NuZJ5OrYTCq3
+      p1dwOswc7m2hiFaWF2bY3t0nFo8hANmdZW5NL+CJ9FFYvc23b2/hIsd/fvs+EbeRUkNBaTep
+      VCosLC6D0qTS1nE5bLz99g/Y397AE4ywvZPAYRHZ3Nql0ajTlKFdzZOvdVDaTXS5hSaZj1K+
+      dHkmOFUHuPDCS8f/z92/RzzmYX4zC0C5XOHWnfsEbGY66gCJlXuI3j4+yCFkU1mXR2wAACAA
+      SURBVAvcmN4jGM7hcLsQqwlu72pY5CJjPVZ2qjYUpY1d7OALGJh+tMzC/XsMjY2SzuSYXtjk
+      9//p75wYT2hwkq8NTgKQAGwWI7mait9p5DCdZn59Gq9F58KLb1AqVzAJMktbM/xX/+U/p54/
+      QAmO8fDODc6O9vHWW99j8PIL7CwnMUhLdNoGbIYOTcwYRZ3X3/zKL+dKd/lc8gmSvk7T7Oef
+      /Re/RzubwO124nK7CQZDuDxuSoUCHn8IswR2p4/LL7zCi89fxuu2MjI8hMNioNwWOHt2grDP
+      wX6mTKgngkWr08GK2+nE5XJy5bXXOdxZplTtEAz4jntfnn1ApXUyeb/J6mA8FqIjWfF5HBSL
+      VUKhAMGeOAN9EdxuF8VikVDwKE44OjhJn1vA4fGxtptlaKgft9tF0OfB7Q7isouoJhcXxnpp
+      iQ4Sy7Ps726yn6v9wi92l88fx0pwq9U6qhE2s8RLL774uVgJ/slFti5dftGcTI+uKRymM4TC
+      0ccBMV26PN2cXAmuZri7ckAjm2B5Y49Yfww6Jf73f/MfeO7Fy1TLJdodmVa7A5pMudZEQqda
+      e5yhTTTQaR/l+3z77/+KCm4W5qaJ9/ZQqja4f/s6NocXs9lAPl/AZDLRajbQNJ1SqYLVaqaQ
+      zyPqLf7yr76JoLVYWNsk3BvDJAko9Qw/+tH7tM0O/u4v/oKIz8DaQZl8oYLNBJogUauUMBgt
+      vPujHxMK+mh2VARNptpoY7WY+fu//Sv2NlYxh4ZR6iWMRgPNRpP15UdUFRM+1y+vCmWXzx8f
+      U4Kdbg8TZ+Logo4BWH1wn/6BCCtb28w/WMQoykhmE1ODPfzghzcZGhygd8DDQVrGZreDaOFL
+      L56hplmorS1hkhTuXLuK4ojSrJRZm7mOJTrJ5sz72EIxUok0EZ+JYrGIwx2hWCsQj/UjmJ2M
+      TJ5nQhQxPV6UEExuXvvym1hMOpsRL7Pzq3j7JjlMrLK342I0YmS/ZadTnUNpN1mafcCdxT3O
+      9DpxRcd45blzNFstdFljb/EOSxtbBN0ucnWBPrdK0Br9ycvR5SnnVEHHZDZhNpkBnb1yhwtT
+      Z0isLOAPhgkGg/g8TrZ2EvRHQ+iShb7eHuyhYfaXH3D+wlkOdzfw9gyidRpgMDA4cob1pQVE
+      i42eSIDU3g6uUC8iGqNnzxPvCdE/fpHReIBI3wjnJocJh0LYrRZMZhOlw222D0tIRjNWswlB
+      EHAG+6FZQJBETGYbmtxAl8w0ygXMVjsGg4FE8pCw38PQ6BmWFxZQAYPBgMtppaOJRPqGGR/p
+      Y+LCJcZHBqmWyzyamWFm5tFnexe6PDGOdQBd11GbJa7emefLX3j9H70SrLbr3H20witXnvuF
+      DzKTSuKLRDF0zfNdfsGcCIjp0uVZ48RzXq5m+OZ3r7K8MMed+zOPa4Q1+cu//BtU7eMhggc7
+      mzQ+YqZ/eP8esvbh57m792jqKvfuT3/s2E/i3r27Jz6ntxfYzjZAl3l49wZzK3sf9jP7iJlH
+      R2LL1e/8Lelanbv3Zo63b29u8GHiR5279+6xvLTER4ba5RnlJ5RgndjAELF4kL7H6dH3Fmdw
+      +1xsJ/e5f2Mai83MSNTN9Zkt+t0aoZZIbmMOVbRgEjWu//iHBH1OHL1nyWcOqD4UONhPUyq8
+      g9kg0G41UGQNg9OBQTKxtbFO7+AY1VwCyeLGZxMID0yyvbHCzl4Sh8vGWNjOTqbGQXEL4xsv
+      MzB6HvtHrDWDQ0MIwpH/j+jwsDH3kHK5w/Uffoe9sgaVDJrJytbcHSp4sIodKsUSVqPK9354
+      iz/4w/8aXzct4jPJqZK+w+nE6XAAOmv7OSIBB2tzc3iCPViMsJ1I4rWbifT1YbVY0JBAU9F1
+      OD85zK35BPGQE0mycPHSJZxWI+1mjWyhCKKBoXic3v4BWvUSnnCc8ZF+3P4INpOArBz58Li8
+      Qbx2M6gdDg6z6IBBEpAx4vO5MBtENre2AHA6XTgcjyeEYMRl0qm2a6TyHUwi9MV6kfQm5ZYR
+      UTuqUqmpKmsb2/SGfbRklb2tNfb3dinUPn0Vyy6/+pzQAZRajh/cXuBrX/7icXr0druDyWym
+      3Wo+fsrqaIqMiojNYqLebGOUQBMMSAJU8gfs5hSeP3/mqEaYyYTc6aApMoouYDJKSKIEgoCm
+      67SbdYxm23FtLlHQackapsdengIarbaC2WxClCRURcNiMaF1amynqgz395w4oXang1ESaHU0
+      NLmNZDJhlATasoaqyJjM5uNwTEHXaMsqNrsdpdM68hg1GDF2VwGfGY4nwAeuzl26PEt8rErk
+      d2/MMjXYS7mpcP7iFAa9w3e+c5Xf+MbXkX6KP30ltUm2baTTaiALVs6PRZmf3+TcuXG2l+eo
+      iA4ujD0Ol1RaJAsNoiHfiTZ0XWdxcYmpqbMnvldaVZZX1rD5+xmOHTm4LS8voekwGo9w9c4C
+      b748yc5hh7Hho4Wsw+1lpOAoQYeBdi3PXq5DPGRk56BJvVbg8qULR/ulkgQjAZYWthHVCv7Y
+      GSLHmaO7PAucTI+uKYR6+3H53Lgeb0yvPaJQbXCQTTN94z4Wux2PRSeXK9MzGCN7cEAk4EKx
+      99AspNlJ5dG0c5SLOUBnbfcARYN2epuOriAarUwvpfjS5UEyxRIem5VkTcNlt4Pc4L2r36eN
+      BbNBoC9gB3cvPn8Pvp4PJ0zA7wHByubKAtVijkypwKO7i7TlYWZvzjI0EKS5U2BkKML+fgaD
+      3UvUbea7f/f3fOUP/gVLj6bZSJYoHqzyytd+h3w2ycrKAr/7+90aYc8apwq7wWCQYDAI6Myt
+      7jMUczH/4BEmuw+tUydbrGA3wvLyCu5gFBMaqB0q9RaZ1AG6aKRSqaK2q6QzeVL7B2TKTYYH
+      o3QwE4/FyGayDA30sLuzTzA6QLWUp1ItUWmoCO0qhWKJfD4HJie9sSgWCQ7TR9Ulg6EowaCX
+      jd19fDZYXNkhlTxAlER8PSMEHQI98RhvffttYr0hao0mAEOjI6QSuyyvbZBOpghF4/RGAlQb
+      bfpiA7iNKvlCgcNs8TO7AV2eLB9Lj/731+b4vd/46rESXCgU8fp85LOHCJIVdIW9tVluPdrl
+      X/7hP2drY4eh/l500UCn3QHJiCY3EUUDHqeFWlvAqDcpNVQCHhsNRaSUPiDU08PeXpKBeISO
+      bkRuN0AHQW3S0Mw4jSqZYp2+eByryUCnlmH1oM25sdjx4AuFAl63i2w+h8nkoNOpYjDYsRgU
+      sHjIpw+IRkJUmjIuq4FqQ6XTrtOqVxAtbnx2iXxNxmY2Ajp2s0RTAVkVCHVFoWeC4wnQbreP
+      Y2pF8WdbQXRdQ0foxth2+ZXnWAdQVRWlnudbP77HC2dHKTcUJqfGMaBy9Z13+fJXfo1yqUin
+      VsDoi+Gzm9A+IYHs/sYSjt4xPNaTQfSdRpk792boPzOJy2rC630c9KLUWFjfx4iJsYlPUYsM
+      WF5ZZWL8ZF2wZiHJSiJP/8g4PrsRNJnVlXUkqxODUmEnWeKV117B1I39feY5qQTLLTzRAVRd
+      wGY9qhFW2HzA3ZlVhqfO8ef//k959dIEJWGFwcERlOI+mtlPIbWFItm5PNnPzOI64wNR9vJN
+      giaZimrgxuYGA/1xVle3ufLqq3QOFskrFi5aFP71v/73/Hf//b9kZXGWyMg4mYM99jfTlJp1
+      mvl92pITo1ym1ZYZHR9nbWOTeG+UOh7kSpK9vX1q+STpcoeekJNK28hYLIDVZsVpOTo9ud0E
+      QcNqtfHej+/yO1+e5G//498xfm6CZKZMwA5qu0FbcvLmGy+ddp26PKWcnh59eJiR4WEE4Nbd
+      RSZGXDyc32N0bAyf28HY2DBrS9Ns7ByyODdHpanSqZVYWFxka2uZpm6gkE6QTCaZuTvN+POv
+      MvfoEWZJJrGfpnfiMhfjFr737gPGxsbo5PbIN6osLyyRTedZfnQPHZVUCaqHCRK5IsNBA3/z
+      1vs8/8aLPLz1PolUnu3tPUBjPZHGq5WoyCYSm1v4YwOMj45gQKFWb2K0uhibmCIadKCjo8gy
+      rmic9777D7QbaTLZPO/eeICua1QqZWrlCt2isc8GJ9Ojlw546+Eev/2llzmSDnS2trcZHBhg
+      Y3ObTrWA0e4mEApRLBbIJFN4g2EMkoSIjibXyVRaDPRG2NhKMNgXxu4LsjQ3w9jEOdZXF4iP
+      nMNrlnkwt8LwxHnKyQ2cHj/76Sw94TCarAAGZLWNoNRpSy4eXvs+w+df4vkLo9y/P8vUpUss
+      z83j9AWwmgxYJJmDYof+oJ3VvRyvvfICkiCwv/qQojHKuaHI8Qkf7KyznSzx0kvPM/9wmnDA
+      heaIUjlYoWP0YNTbmHWB2NRZzE/mnnT5DDmRGU5XZbZ394gPDPF5Eo8/KeN0ly4/L8c6gMFg
+      QFWaHGaL+H0lWm2VcG+E/MEOiVSesbPncVqNAKTTaQKBwKkZ4n6SSiHN0to2vnAvZwZjP3Nf
+      tdMgXWwSDX+Y9/PwMI3LKlGstUGuo6ga0Z4eCrksDo//H5fNWdfJZDPoiIRDR7XFCrkMbUUn
+      Egl/LGV7l6efkzXCOnWMrgD5XI6OBtHeCPdn5nnjxQlu3HlE1KkjOQNsr86TPjzgza//LpX0
+      HgZXGKWaweqNojVy1FUzVkmmJYtcvnSOXPYeL730PLev/QhnsJdKIUtvfz/7e/s4PEGMahWT
+      K0R2ewFDYJjDvTVassCLL73EzP17+P0uGoKNZqWEy2GjVclz7dY9vvDFL5E8SNEX9ZM4zGEU
+      Tdg9PgydMk3BikGpUWvKhHxu8uUqPbFhasUkkjlI+HG+3Uw2jwb0RLrFsZ9FTs0Md2Z84sMP
+      SpOV7UNsIhwW2hR30tjNEuFojFjQzo+XqpT3ssSDdlpCnkYuSyJXwmHQ+c3f+2cfaVVhJ1nm
+      jXgvmUaZh49m8YT62V2bQ7J6+fpQkLWdHthdRdF1PGZoyBAPOVgpiYRNh9hc/RRzuxQLBUYH
+      oty9cZOegRi7Gxu4BsaoZkvU93cQ1A77xRpeh4WI28zKaoaJi5NsbKb58uuXTpzr+MQEXZ5d
+      PrEsyvDQMJV6i9hgPwe7O/iDYWwWCbtBZ+ewgM1qIRDpwUyLjmgEu5URjx+vw4b5cWDx8Mgw
+      IHHh4jksZiNWp49gnwebw0vbZULv1NjOi4StNUzhcQx0MEtgkmBwbILKVh6vYMA9eIZS0oig
+      NkkW6rz22gi7qRzRwTAWjwePyYIqe8imDxj1RXA7LDgtEg6/jMflg74Pwtc03v7BVb766189
+      FnvWl+eQJDMmfy99j2sLdHn6OVaCZVlGV9rMLq5w9tyFz2169F8Un2bFu8vTz/EbQJZltE6b
+      VqtNvVJG0zTsTgfNSolCpU44EqbdbCOKYLcfRV8163XMNhuNeh27zUK9peCw/ezc/bqqkC2W
+      sVuP9vugLbndoNnWsDvtlPMZTHYPDusnGyIb1TJNRcDvPWklUuU2HU3Cav74S65erwNwuLeJ
+      PTJMxNtNhvWscuLXobYrqGY3u5urVDs6Lzx/mfdvXGdqrJ/37ySxiSLlUoYLZ89QaEJxa42L
+      X/91lqZvIVqdeHuHaa4tE+0fpNmSQW2jyw06oh2zpCNJAgcrD9lRggz7RRBtXLp4VIlla22N
+      Ulujz2Ngu2KgeviA8XPnsSBjsbtodhTSyQMGBmLsJzO4fEF6vSau3Z7h8qXzpBLblFrgNAuU
+      SmW8No3dhhuHViIcG6SUTqJKFibHhlhbWwNgst/HfLbcnQDPMKfqAJPnP6IoqjL7qRwOe4jC
+      YRqBI7fk+eUdYkEvCAIvvPoaf/mfvsvLkoa5d4x713+I7ohBu4jHZsTojpJN7WI1iQRsTs4P
+      T3EmdFLOHjt3EYCFG+8SP/cye4VdNldW0FFolCpoohFn2Ef94X2UwASJ2WkCL0xi9YYJ+518
+      /52HOEWF2YbKS4NuNg8FNAMU20V2DzIgGDDQYXJsmEuXjs6vU9j95VzVLr8yfKISHA6H0RCw
+      OR0YdQ1BV+i0KkT7egl4nBgA0WhjamKY3uFepueWGBi/xOH+HrrNRSjkIlmsE3DbKdRlXL4A
+      xmOxROfW9Ru8+PrrxwMZu3yJ2w+mMft6GQ/bWDtsoCgiL1wYYWErQ3zAT93kpKmFsfn6sK3f
+      YWlzn56Ak3ILRvwmHB4rfiO0ZZmaaiUS9iIZTKB1A967nOSEO7TaqfNgboVLly5/ZunRm80m
+      Vqv1s+nsJ9hamcUSGibq61p9nlWO3wBmsxlNEnA7HZjNlscBMb98LE+w4N3kxStPrO8unw8+
+      FhE2vVvDXD8kV1f58ptf4Aff+hsCQR91zc+50Qi6IJLPlxga6CWVzuD0Blmen2V8pB9ZsvPw
+      7k1eufIcxaaO12nFaTXSwsz1d76N1++lToiz/S5MriCbj67TsvVxpseBLNmxmwQKxTKxvgjb
+      u0mq2R0CQ5cwqB3qtTxuX4Dlh9NYoxO8fGEEgJvX30fWBb74xuvcfPcdJJuXdC7N+MgofbFe
+      quUqm+tLjF94icxhik5+m4ptgEsDXnI1Ba/NQCZfxq4WeXCo8erls90U6c8Qp06AK2ePglFE
+      UeStb/0NDrsNsyfE3MwqX3r9EisLM5htPjRPH3I5jah2ENUmvWMXSWysMNAb5u69WWLDcUQd
+      Lr3+a9x95z9jtdkQTA4amgWllkHSWsTOXKJTSjG9uEXE56DXY6dksNFp67jFCnN7db5+ZZjN
+      gyLe/nNcGgkjCMJxJcoP0rmIInznre/xjd/6Ld5+61sMxkJspmtkygp99jZ2d4hiSyVibGAa
+      fo2tBz/GYzGQqta4PDXB7KN5PANT1It5fvvXv/QEbkWXJ8Gpkr4oiseLRA6HE6vDhaDrjJ+d
+      Qm1WcPiD2K12Qn4vLocdp9PJwOAge3t7OJ1OMtks4XCIc1PjHBQ7+K0SDqcTq92JyWJHbJWw
+      u3wM9g+yt7tDLl8kHArg9QXweNyEIn0IjQItwcb50V509wAbG9tcGO1BFEUEdO7evfcTYxWJ
+      h73cvnMfg9OL1+PBbrczde4cfp+XQG8crZrB6A1zmNjB57JRVSXsos7GdpL+eD8BnxeXzczM
+      7ByPZmb4hIC3Lk8BJxJjqa0K16cXePWVVz5XK8GNco7NVJlz48NHX6gt8jUVv/v/v6iytjhH
+      //h5zJ+RztPl88WJgBhdUykU/7/23utJjivN23sysyrLe9PVptobtIM3BDi0Q3I4bndjNnZj
+      FN9K+vZC1/oX9k4KhaQIKRQhhW4U0sWGQvvtfrNjaIYWIED4Btp7X9XV3eW9SaeLbjbYJDic
+      2ZkBuEA9N0B1Zp5z6mSdzPOe877vL4fPH0D8DvoGq40ahUoDn9fddF1u8ifh2D6AWk5xb26T
+      ducG2arG5SsX2V6YYjdfw21SMPyDDHZ40TWNVGwN0d+J06Qj6xWmtks4KNMzcAK10cBut1Kv
+      1zHLNsyiyqeffIYz0ML4yCAYBuh15ld2GD3RhyjA3MwcQ+Oj1KsNHFYzlbqCw2ahXKkjU+Hu
+      /Sm8HUPENpb4wRuvP63+avKM8bWNMJ8/yEBfO4ZwcHBhPc7bb7/N1vRnrMRXiS3k2U7sMtbT
+      gp7Ks72b58UTIeZXCnQ669jtNj757Qd09w/QkJ0IhsDLJ/zg66SU3eHWtQ8wbGESK5OUNBt7
+      ezHsIhSrCsVKirrgxdFIU7WE0HJbrG/v89pP/pozF1/EbrdSTMWeQjc1eVZ57E6wxfrICe30
+      cD8379wlYHcw0N/F/uYqgbYuujw6ac2BWatTtYSIOMt4A0EKuTyDI8NYrC78HZ3k9pNYW/ow
+      L3xGSTOIBFsZGDnFtFHC5m2jzSfyYKNEu0cj2BpmcXaFwEA/m2ubBFvasQc6CftcOGzN/P1N
+      /vQcE8rWG2XuTC5w7ty575QR/AW1YpaplRgXz4w/7aY0eUY4LpStNVhaWad3YOg7OQB+X0q5
+      FKmSQndH67ef3OS55itGcIb9sk7l7uekyxqvvv4SixM3ydYFHHqRorWL00PtqPUqu1sr2NpO
+      QDmDx6Ly2VyaH3zvJHupPGG/i/1UBq/bzKc3Zrh85RJ2UaXYELBbJDRNwy3rfHBrFrVeQ0LH
+      43UzPjZKPl9AzW9RsA/S6TdRKpYwW2QEycLm2jKCAGoph0k24+o9g72eIxSJUCkVqWQTTC7G
+      OXX5ZbbXZpsDoMm38tid4IsjPQBIksSvf/VrfvyTH7M5+SlxLUA2tkksmeX8UAtVk4v4bo5X
+      T0W5tlzDre3RFnCyuLFP7+gY26uL6KID0ahTSifQZQ9WocbYpdcYbLHxP/+v/wdv/u1/Q2z+
+      HgIGgqYQbXGylaqxtJXlr35wisW1EvVaGbNZR9c0zJKATRKw2mTSVY10OkvQ7yW+k+Fnf/2X
+      uB1WJFHk5ufXufLiS0+tY5v8++CxRvCX050M9bRy/eYtPCaRUCREPb3HwIlRIkGDpOEjnN1j
+      ryZDOY4v4mI3U8LrsrK1uUVLpBXNsNKoZLBLLQSi/eSSCU70daKX01x4+S0SK9PY7HZEDCRB
+      IOB3s1fKcnLEz26yQDDcQqNiwzBqlLJJ0gWF/rYQFqsZv92GrpsZ6m/F5Wtv+vA0+YP5ilB2
+      nk/vTPPy9178o9yh46vzyOFeQq6nk1utkNlnenmbF/8Mot1Nni2O7wQbOqVSGYfT9Z3cCW7S
+      5E/NcSO4lOTa3RW6AzZyFY1Lly9w++qHmGQr7lA3/Z0hECUEDDTNIBVbwRLuYGtqinBnlI1U
+      g/PdDt757CEXz46xEU/zwtlRECREwUDVDCRJxDAM5qcnKStw8eI5RCC9ucDkRprRwQ6u3p4j
+      6PfS5nXQMzoCqobZbEZpNDBbLCiNOmbZgnGY2UHTNFRVRZZlNFUFQcRsNnH9+g3GByJs5e0M
+      dfmRzGZ0VUWQTBiaiiBKzEw9pKHDxfPNt8XzyNdsgFBLK729rUcHC1WFt1/+Pu+++x7pTY25
+      eJkWp4jJ0PAHQyg7GWbnZhmp1yjLYXRNplSpIQK5TJL33v8AXTBhl1QURUc3GVjsIV64cBpJ
+      eOSOag93cTnchVjZpVSuYbNWSJRybCc2sVmt1HQTsb0CLwxF+Pj2Q4ZOXqbHVSWvyRRrOonl
+      SVwd/RR29zHbrfz1X/6E7fVltPIeDVOIax9ME+noYH9rC29HH0YhzsVXf8zQ8MiT6+0m3zke
+      O9O32WyPwhTVGhP3buOPtLKzV8bvsiLbHLQG3Sg6GEDP0ClO9LYdXd/ZN0Rb2HfwwdAxDANB
+      AE3XQZS5cOE8TvtBHfH1JQo19Vid4VAAVVFRdRAlE92d7eiylxa5yFI8Q9fAKCMDUboHR7hx
+      9TqtbgFbqAu0Gr5QBJt8YMR7gi2Mjw4hAq3RXs6MDRKMdHDx7EmGh/qZeDh1VO/G8gJVRWd1
+      boqV5XnSZZUmzz7HhbLLGT68PcP3X3n5KCRS1w9+wKIoYug6HAaiCBz8+AVBOEoyZXzp7yKg
+      H5jXgIAgGOjG4Yj7UkDL1tYW0Wj06LNhGBxa5Y8aKQgYxoE0kyiK6LqOIIqIAui6cdSGgzIO
+      WnB03pcCZwRBBOPwOxjGgTC2+OV2dGIY+lGdQlMC6pnn2CpQkybPG0c2gCAIKMV9fnltkrHu
+      VvJVlbPnTzN5+zPqKrT1jNDd9iht+frSNC5/K4popdXvBOpMT28hCHXGxsb48L1f4m/t5/Sp
+      kcfPs34Hi3MzlOsqp04f2Aml1BZTi3F6h3q5+dk9Ih3tvHD+9BcvI7RGhaX1HWwWM93dXV8r
+      7+GdmwyevYzdBKnNOTLmdgbbmiqQTb5qBBs6bZ09hNsChA8PJlI5fvSjH/HrX73LvWoWTbBi
+      k0yEQk52E3ss5syEjX180R5K2TIYCmNjY+zs7BDoGOTe9U/IJBNYvREiJ8aIPbjP1s4uwYAb
+      m9uNWbZTKpSwuewIGgiGwqkzZwjDI5EOk4uB4RMEbFVkVwv1bJz334thqCqi1Ynd5aVWLrA4
+      N8drl0a4s14l4DLRFXISGTrPXjxG72Gur0ouyW69wdxEErNJpFFMomHl3NlBrl29xU9//l/j
+      tzfDw54XHvtw9vl8+HyHRqyukdhex+YJYXF4CQa8tAbcVGo1Ai2ttISCaIKFF86OU6vVqdVq
+      ADjcPrraIySzebwOC6qmsb+3S6lSJdjRT3vYTU9vD9m9HcwuP5VSGaOeQpNc+A/rz+7vUKgq
+      OL0+Qn4fAlAq5inWNCSgrytKpL2TerWMoktEo+04zAKj5y9ztjfIvdX00WZcPpkgXTxoW7WQ
+      wuJroVYpYbI68VhNzCws4bRCfHub/b1dtvcyf/bOb/L0Oe4LVNznX68+5C9/+NaREVzMpckU
+      60Q7WimXSoiigIiAbujINgfJvT1cLidOl4NSsQIYuFwuduNb1DQJo5Li2vV7/Ojnf0ejkMbl
+      dCKIJkyijmSSaaga1UIWuzcESglBdmE/zBy3ODdLz9DIkZypoStsbmwTiLQh6gomkwlDEA/k
+      nYwDlUsNAavDQ2Z7jljJxqVT/ZQKBURJRDBbMel16g2Fjz/+GHugg0unhw/CKw2VclXBYbch
+      iCIaEm7H08tZ1OTJcCweoGkIN3neOLIBdF1HrWT46PYsw93tFKoqJ0YGWZubJFuo0j9yioD7
+      UQrDzZU5PKEogknG4/i6z8/m4gyKI0R/x4H00F5sna1EkoHRM3jt5sc0xWBxaZmhwcHHNlRX
+      KqwsLqNZ3GzH47z16vf+yK/epMlXhbI1BV+4HdlmJ2g7OLi6tcPbb73BO+99jCzUUQULsigR
+      DrlI7d9jIWum21EDScDq68WoZTh//iwrW9toJI8GwMrSAt7oKHahxr1bt1GRcAfbKaZ30Ro1
+      JIeX9F6cXCaDwyqj6Dr5YhlZttHV4qCME8kZoKuzg2x672n0VZNnkMcawZFIhEjkkbZuvVpC
+      ku2omLBZzXhtJtKZNC5vkO7OTnLFGpe/9zqJ+atgC6BUMuwmS+zsxEmlc/eE/gAAIABJREFU
+      06g6jJ+7gpRd5sNrd0iks6QKKkv3P8UwiUzPrWGxHLxFJLXGRqrI4swkZouNoFPg/c+X6Onp
+      pK+7A8u/40i1Jt89vuYLlEruoeq9R+7QZ8eHWVhL8PqrV8imU0iSiEkQUHUNp8ePsrpG/8UL
+      CIaGyRZgeCCKoZb58U9/itDIky+VcfkCaI0KdWuE117qZH0zRiDUSqPURrijh4jHiWDz0Ro8
+      S2V/DTHcSf/ZE2wksnQP9GBytWA+XPSvV0pkC+Un2klNnl2OCWVj6BSKJVwuN3+4F4BOtaZg
+      s/5xMQC1ahWLzfaNia80tUGlruJy2P+oepo0ga8sg2rVPJ/enWFsoIdyTaOzJ0pifYm9TJmR
+      sTHslkfG625sA1egDZNJxGL+yotEV9jY3qe7qx2AjY0Nuru7v7ER36QRsJ+IU1EMOjs7EAGl
+      nGUjkSUY9DM3N0+0u5/OttCjarUq2/E84ZDnMeXpLEw/JJmvcfr8RVzWR21O7e1g97VgERrs
+      7BeItjc1g58XjgtlK1XsvhYqlQqaISABk3OLvPn6y/z2o6t4bToNw4xJlPA5JbbXV5jNmDnd
+      YaVcKuLrGEGvZBg70cXdiamjAXD37l0EpcLmdoxgpJ1MrojHH8KoZmkIVu5//gk/+ou/YmN1
+      DX84hG7IoFWw2+zoX3KZTqezKJqGuZGmZLiYv3+D5E475XIJs9WKP9jCfmyHf/3FA374xsus
+      75Zxuiy0e234okP09LawfWuPQmKVia09TgwPsbi4jFLKoFs9dEaj5Aql5gB4jnisSdnT189A
+      f9/RNMRkkjF0jVy5DoaKHYVkJoPTG6C/r4+1tS0uvvQaKxMfkqs/KrLRaBz9f3p+lYgLtrdj
+      uMNtrC3ME0skWVhapjXaja2awNRygvWVNRKbMySSRfr6+xno60dTFTTdINLZy8jQAGZRAEHA
+      JIkkdnYJB9xYfSF2YtsUahrdPd2Y6hl8HQOYaznuLsZwfin77eTsMqf7/Pznf36H1hOncDmt
+      9Ha1sr6+TTabo6EoNBoNmrsizz5fM4I1TTvwFD789Q/3dXNvYpqXX3uV1O42ZpMJWRBoaAq+
+      cCv5+RVOnTmLSRCRzXbGRgdAMjg5OsTy8hKjo2OcPHkSSa0yce8uQ5deozXgxT42TDadoqPb
+      i0fWqTn9yJtrjJ29CMVd5HDfUZvu3rjGyAuv4j78EZscfmRlmo7hM1iMBk63A0W0ELBZUFRo
+      FJMIDic9YQ+So4P0WhlRAEl2M9BvwmMLM7u2w9/9V3/D3MwsvkgPfn+AIdGGYWgsr6yApjMy
+      Nvpk7kKTp8YxoWxdbbC4vEr/4Ik/PCjeUNnZy9IWCT32cDGbJJGtMtjb+ce2+Q9ifzeBPxzB
+      1AxybvIYjgXEaPUy96YWGB7sp6Fo+IJ+Csld4nspuvqGcNlEstkSPt83uxLnc1lcHi/5XA6P
+      20WhVMHrcX/j+fVyAUW04jzM/ZnP5dAMA/+hM16jWqZQruLy+skktjC7glgEFavLjfkrSu+6
+      UmVucRWnN3CUFCuTTiOIIl6fj0I2jd0TOMp6l8vlMAzw+bz/9h5s8u+a40Zwo4Rg95GIb1PV
+      IBD0c+veBK+9/n1MgsL9exNsx0qcOj0GRgOLZBBPVwh6nVQrFSxmgZu3Jvjr//AfuHPrFmdG
+      oqznLcjKIr5AC7/97Xu88frreENh9hNbXLt6j7deOUtBt1Cv1fAHQtSKGQyEowGQiG2RLCl0
+      lHZZzVooTn2KyybTNXqS3a0YA0ODrC0t4g620dfVSotbZGJ9l0ZhH83sppjaJZPLcmJkmEwi
+      gTcSoZgvEmzrIhtfQrCFmwPgOeaxE52hkTFOj48dGMFqjdmZGeYn7mJv68ciqiwsr7OwsMDu
+      7h5zk5NMzU8SbuticXWD9pYAINDd4ubqxCb97U6yxRrTi6t0RKPo+QSpbJa13SzRaCcOSWN/
+      Z4u6ycvS3DSjY2OMfWnu3TUwzPkzJ6nns/hCERxmEw3dYOLWdUqVMvduXMMWaGVpZRWAmxNL
+      fP/FcfZ2UzycfEgul0Wp5ZmYXUUp54mtLeBtCTM1vcrY6YuMDnX/+Xu5yXeWbxXKjkaj1DUI
+      9wywvLpGONpFvZRFlQKIokG0qwt/2Iff66A14CVf1ZAE6BkaYSs/j8MkYpZlOoIhjEoGsy9I
+      PLFDa7gNLb9Lw+yivc2C2ePCK3Yc1Xvj2qecf/EVLIeu0NGRC9y5ex9HSxSfVUCyymzvZBjo
+      jrK8uoSqm2kU9kG2s7qxhWgy09UZxWO3YBDFLBrUGzo+q4TL4SDaFjyoyND59NPPeOW1V5ie
+      mkQ2BHpOneTppPRq8qQ5sgEajQZ6o8rD2UXGT556YkLZ30Sj0UCWv10TQK2VmVlYpqtvCJ/r
+      3yK4bdBoaMjytz4LmjyDHN11WZbRBR1ZNiOKAoZhYLFaUGpVKrX6gcSpICH/DgXtRr1GXdFw
+      OuwIgkC9Xj9ycgPQNRXNEDH/jtHVaDQwDHC6XAiH1zQUFZNswSRCpVw5bMujVZ1Lly4dXftN
+      g8YwdIqFApLZisN+EOiiKg0EScZiaa4QPa9I//AP//APX3xQyym2iwKF+CorWzt0dkV5/ze/
+      xGp3QT3P8naGYnafSgNy+9uki3U++e2vsTj9eG0Gv/ntdcyyCTSV/WSGmfk5ZAk2tnbIpXap
+      Zrf56P4a4VCA9M4GxYZBKZ+mUKqS2FqjqoksL8wS20kcpEoBNheneDC/SqQ9iixp/J//0/9A
+      ZOQctWKJSrnA5NQ0dlkglsxz87NPaag6LofM1MwCgWCA5fk56rqE06zxz//6HktLS/R2tzG/
+      vEluY5akYUM0dNZXFrG6fF9362jyTPPYu33qwguPPhgauXwOl8nG3k6cpD2Iuvw5YZ+XmZV7
+      hIMe+rraKe3M4Yp0sTI7TUyW8HSdpJjLcfdukqDVRqjXz8xGjpa2AW5++Ev2ChqtbWGyuzu8
+      cHaIPa2F3L07/MVPf3ysLd3Dp+kePvh/avUBlpYod+7O4BbyGIaIqtRZnC8juCLoBlR21lgw
+      SexvzvHL9Q16xk+ycucBrW9dolYtY3e6+ejT65ztD/HJSoL9qThvn+tkLl4iW5P43oWxP1tn
+      N/nu8a2PO7//MBWKyYrf58Pi9lOTShRLVVpbI3SFnCxt7jAYHUCY/QST1Y4/4KWvrwu1uAuA
+      T7bg8bjw+01k9jdoGxjHEt8m2ttHzu2hs6eX5c9nqSv6Ub33bt1g9NxlbF+SqtlMafzHv/97
+      bt+4gVsyo/gGqWe2iQQ9zG/sEYlE8MoC6VIRlz+IzxkiE1ujoRsIooTf78VqdRFt97EYSzMy
+      2MegyUxNEHDadDpbfUzNzKCpOmdOn/wTd3WT7yJHRrCmaej1Ep9PzHLp0qUnKpGk10vcm5oj
+      GOmiN3rgiFYoFHG7XX9UuY1qgampOUKdA3S1Br79gibPHcfTo2sKm9txOjq7n/oqUJMmT4Ij
+      I1hRFNRyitlYnuLuBvOrW3R0Rfn4vV+RzZegnmd6O49JrSDJZh5MTONyWMgVythkid1kBqfD
+      zsTV37C4p7K/fIvprRIei4EuySj1CqXUDnPbeSzUMCQZEwofffQx2VwBl9tFpVJDV+vkS1Us
+      Euylsty88RkOlxu1sMPVzx9gD7Uf+PIbCp9/do1Epkp72MX/9r/874yeO8V//9/9j7xw4Qy7
+      yQwWk0ixXGHu4SS+liDJZAan08G9D99nNZ1ibSNBwO1gf3uJ/ZqMXs2hImL9PZZfmzwbHHsD
+      KMU9HmyVOTt04LBmMpl491f/Qriti/aAjfndBkp2i7JhxyKo1KoVkEx4TBrJbIHLP/xbkvM3
+      yWpWbGqKguHHbhTYLeoYpT2uvHCe+wsxMuksLW0dvHahm4mFEpRjWGSdlNhBcfM+imAj6Pdw
+      +uwFbn5+FbfJxJk3fozbDGbTodli6CiKhihJSDT41b/8C95gK3eWdvj5W+f59OOPCUf7KIpO
+      nJUcilSjlC9z6c2fkbj3CWWnHbPFztqDRS6c62YnayC7XJRzOX789vef2g1p8mR5rBFsMj36
+      8xei2QYiei1HQ3DitEqISFisVkDHZxFxhDvx283kZAteVUF1tGHK5clXwOuyYfH20tXWwnys
+      gIjA6PAgdrefWuETauUKbW1eTo2eZLG8ib+9D7WYYi+Zxu3x4zODJJkwm0CtZpjfKjE+1IlZ
+      PpynaeBv62V7e5sTUT+xWIzWtgiIFsbHx0nO3AObHX+4m6DTTNpiQbU60ZQa3f1DREIO8o0a
+      uXwWRdWYmpwGQWd8/NS/ITS0yb8njt4A1WoVtZrj2r05Xrpy+TtrA5SyaUSnD/uf2EpXaiWm
+      Z+aw+VoZ7ov+Sctu8t3luFC2YdBo1JFla/PJ1+S54LhGWHGPX9+YYzDiIVfVuHzlIrc+/QDZ
+      4WVw5CQe+4Fx+MWYmZ2dZWxs7FABRvjav2BgGCCKItc/u47bKtB64jwBh5lyepPVpIlTwx2A
+      wb379xGQOH/+LADTD+5TqusEHBL7JYW+iJvNip1LI53cuHGdF1/83lHk2hft+XLdglDln/7x
+      N/giIV5+5WXMooBSTfJgNs3F8yfgUIjjeHs5KqfJ88FjhbJP9bZiCOCwO/j1L/4/wu09eM11
+      ivYOEjMPyZarSLKM2y7jlBQmZpcZPHkOh6SgCRKpooIsgKjVyJYb/P1/+V/wT//4/4AjQH/Y
+      QaZURTCJJNMKssXKX/3kdSqVEoJgxX44yCrlMoYAibUFVnaLnOsP8Ku7MbxWARkF0VBoaAJa
+      XcFk1bA4vZixkavUsVllfvTWeX79q3v0hgTm97KMnzzF0sI0mT0FV9BFI7+LhplISwC1UadW
+      14n2RqkJPi6f7H1qN6TJk+WxE2m7w4HDfig6LYjYbXZki5XY5hp1TccXjOA+/KFqiLz0xlu4
+      zCCbzeiaTltnH2YUVM1AOAwtt7n8BGWN3VwVs9mMpuu0d/dhRkMQRBwON3a7zOLCArrxqA12
+      tw+/TWF2MUZ7Vx9mHml3iYKAaLLQ39dFtLcXvVZDMpmPZI5SiTjrqSJdIS/r6+uohoDZbMZs
+      NuFw+wn7Xaiagdks0Ts8wscfXGc46mJ+fYvZ2cU/Z783+Y5w7A2gllO8e32Kt994/Sg9uqo0
+      aCgqssWCqihIkglBAF2t89EnN3j7B9+nWm9gtVio1xtYLGZ0QwBDZW7yIbFMhR+9+SqqqiIK
+      AroBiqpgkc0YhoBh6F9adTJYXV2nt6/3KCOFpqnUGwpWi3xY7qGGFwaqDpJ4qOV1qPulqgom
+      k4wkCVQrVUyyjEkUqDcO0qmrioJJthyVI4oCjYaKxSKjKApmk4SqG2CAuekY98xzbBWomR69
+      yfPG0SPOMAzUUop3P59muCtCoapx8vQYcxO3UQwT/cPjR0bwF2hKmfmVBFalSuvYGI4/MPPC
+      6tICHb2DWL5hzTWxtYbF38bu1gogMTJy4Ba6sbRIvq4QsEssJ7J4vUHOjB1Pq769tkhdctHf
+      9Ui+deLO56i6Tig6Qk+7/+jv5cwOqbqNrlbfH9T+Jv/+OZ4e3dBoae/CH/LiPzwYj8cJt3Wx
+      szTJvifA/n4eJZ/AHOjm4miEe7dvYao3GJEUYksbBEI+YskGIZdALl/C43BhdYLsbCWdStHm
+      tbGTVzgz2s383DSlaoXp2XXaIn4ko4GKTG9vB3vZBtXUBpZgnROdEQTTo7SM7mAIN5BZmyVf
+      rqPpKX75zw9o7YiSLtRxe3yk4ksIFg+mRpY7D+b4yc/+hp2dOF6Pi3xqi//7g/fo7Gwln8vQ
+      3d1Bw7CzOPsAp8fPlQunn+xdaPLUeOyj1+/34/cfPiFNFgYHB+kbGuDTd9/HY4O8IpBOpgFo
+      7+qnv6udRCyGNxLFIWkMjp8ln96nq7cHtdagr6eN+NYGjkAHLa2tGKVd7t59iCSbSCUzdPSP
+      gVonGnbjCIR4951P8FkUiqpIOpXBHwzi83qIx3e+0j6R7v4ByoUsks1DX6sLR6CdfCaJ2epE
+      FjTml1agUaKqgCjbGBrsIbW/Ryg6CLUsofYuLIJKLp3C7m8hn0myHYsT296mOSN89vmKL9A+
+      v/5sip/84I0jIzifSbKbzNDe1Uu1kMUf8LGzs4vH68flsFAs15EMDdluZXszRjgcRJTtSFqV
+      +H6WoNeDzS5TUyWK6QROj49kKkNbJEAqW8DrcoEkYzfD9m6armgbyWSSYMBH/LAet8sBhsH0
+      7CzjY48CVmrlAlvxXSLtUQxVwe12kYht4Q23o9TKByGVap2qYhAKt1DM7JLKlenqilKtqTit
+      EpvbcfKJNexd53BTxB2MUK+UAQOfz9/cEHzGORYP0KTJ88bxZdBKhg9uTjPWGyVfUzkxfKAR
+      li+rjJ05g80kUtiPUZb9tLrMzK1sMDI08LVCN1aWaesdQP4Gd5215QVCkQjzS9v4HQLOUJRI
+      4Hi2uaWlZVw2E5mSwuDQIGYR9HqeuYUNAtEBvKYSD5b2OHeig5sPl3n1exePXT83N8fIyMjX
+      KzcMrn16lSuvvsL68jKKqj7+vCbPBceNYLWBN9yOKMt4ZQsSsLS8TO/ASUqZBLcmZ3DbZVZz
+      Kv3RduqVEndvXqeiy1DPUVUMXn39TdaXFwl0D7C/ucz04haDvWHiOwlki4v4fp5wwEl2f5Pl
+      fTOFnVmuXL7M/HSRSMBHVQ6hZGPsJ5OcPXsaj0s+cswrFcrYvAECHhvlnTUeTM3hMzdYWFmh
+      u8XF/OYefruEJlgxUFlbmmV1O43TotFoNBg69woBU4Gd9UUedo6xu7iIPxjk+rWPMNuDXDp/
+      6incgiZPk8c+o9vbO+hobz/YjBLNRKPtbC4vkU3HSKQq9AwMsB/fIrW/z72Jh5jNJvKVOjaT
+      TkN9NJWaX5gnvrzCvcV1Btu97OztE+oZQawVcHl89A8O0dHZQyG5x9iZYRanHrKfzrOT2HvU
+      jo52lGqZSl3BHWqjr6vjSDc4GvYyFy8QsEssLCywvLrC3l6Ki5fOk0mlWVhYYGN5lb1cidaA
+      nVShyvzDSdzdA6xOTwCQTqdIZQqcPztGNpcnl83+eXu8yXeKr/kCffBggx+89ALS4dCI78Rp
+      a20jl0oQ200TDIZIJBL0DAxSLRbQakVKmozbbsZsEvEFWkjG10hkqvjdFsoVHbfT4PrVq/Rf
+      eJPeaBtGJYvVZqGBjVopRzjgYXp2kROjIyzNL+IJBJAlkfb2gzX8mfu36Rg5h9f26IXVqOQp
+      1nSK5SqSoaLWyxQ1E0GXnWDAy7sfXmN8sIu6bsHltuKxyWgWD9VcikhbG/FY7HAH+aC89kgL
+      61sJBEOlu6fnyd2BJk+VY5nhDF0jlc7gDwT5U2YTVxo1csUqocCT2WhSGzUauojd2gxtbPK7
+      OXqkqqqKViswPb/ESH+DSl2jPdrG/vYaO8kCoydPYj2cjOtqg/1MkUj4UaYFpZInUxVoCRxP
+      hW4YBrHNdbB68Xsfv9Jk6Bp7ewkQHURaDgbJ7u4uBuB3O1hc2WBweBSrWSQei9HW0YHAwaA1
+      m0TiiRQd7Y9kXQXJjEUCpV5lcWEBV7CNjkjwG7rAYHcnDpKVSMs3ndPkWeVrGmFWT4hisYii
+      HxgID2fmeenl1yglY0ysx+nr72F5bpZcw0ybT8bubaGU2sIkW9EsATaWZmjv7GJne5NI9wl8
+      Qoa1tMaVUx4m799BtPuoF5LUNYn+nnaWVzc4eXKY9F4af88XP0CDUjEDkpOZhxO8+NobxJfn
+      iBUbWI0GpUKaOnYW719l7KU3ye8mSWyvUdNNnOiOsLCyzYUXLzN98zPahs/jMAvMTU1Qw4ag
+      FCmVFcbGBpifW2RgeIR0No8n6Hjyvd/kqfONGmGDA/0H02NNYXsrzu07t9ENjYf37hHtP4FS
+      jDO9mKBcKbORyDLcFWRt/iGCpxNZr1Aql1lY2UBr1DBbbJiFMnfuL1KpVtnP5NHKGda2Y+ST
+      W+xVLIyePkWrx4qu64BA/8AI/b2dqDpYZDOpnQ16hkbIZrLoukY6nSYQbqezI0I2kyWZLVLM
+      p4nH42RiqyTLGrW6gqA3+OC3v+b2xAzVaoXdvTSmcpG1RJx6KcXKfpXR0VE6WnwHdRsGmqYf
+      SUU1ebZ5bFaIi6OPAkJWVlbo6+sjtx9jcWuP3s521je28QbClDIJvC2d6EqNnjY/2+k62b0t
+      AoEAe6kM/nAHfZ0tzE5OYPO1UkpuY/G1IhkKsgiKppLN5ekdPkPAKaPXc3xyZ5nvv3ThqP58
+      KsHixg4+p5O2/iES6yuYRY1UQaEj5KCgmRAaCoZgAAYmo0EylWfo7EWsaonJmUVc/hB6JYNh
+      9WIVDawC6FaJ5O4+4a5hoiE3ulLhkxsP+P4rLzA9u4iIxsjoeHMn+BnnKxphdeYWlhkaHv3O
+      BsU3afKn5MgGMJvN6HqDuqKiNmrUVB2P30spvU8imaNnoB+LJKLUy9QaOgYm3If5+HWlxl62
+      TIvfyU4yR0frN+ns6uTzJTzfoBmWz+dxuz0IAhQLBVTdYD+2gqd1kEjgj0uT2KTJ4zhmBGv1
+      IobNR2xjjbJqcN5/hs8+v8lLr7xOPZ9icnWbFqfKZt6MLIlEwgFEyUzYlOX/+peH/N33R/lP
+      n07wt2+9yF5RIWA3kS0UiLSE2UlmCYSCXP/wY8bOXyTsMrGTrtDidZKt1XCKOh/fuEvEZaJl
+      9DJyo4BmCAx2BljbyzcHQJM/C4+N+Rs5+SV/eK3O4uIKu9tL2F1ejIYJHSclzcxv/+Uf+dF/
+      /G+hniXstrKwWyLis5PYTTA7s4Gnxc2pvjB37t6jbfwFph5M4PQG2VpfQg/5WZhZYsvt5vTL
+      LzF7b4K2sB+XxUxfTyd+24H/fym98ST6oclzyrcGvbZ3D3D61GniPgvryQKtLR7Kqky1VCD0
+      xg/J7sZpaXNz5dI4yVSZvu4uDKVOtLsTT9CN2+eiI2om4HYgtbcfVqmi18u0dXXi9vhpCwfZ
+      91jJ1yz097WzubGNf7iZmaHJn58jI1hVVXSlyr3JOc6cPfdE06P/LpZmH+BtGyTsa67TN/nT
+      c/QGaDQa6KqKKECtWkURDCSTCcEwqNfrSGYZk/S7R4WqqkcZHlT1IH2JZDLx1ZVEw9Cp1w7K
+      FDCOzjEMHV0H6Uv1dA+MPmqfpmEIIoauAQImk3SsLgwdVTOwWOSvJbfSNBVBlBCFg8wSqs6j
+      72MY1Go1JLP5UfLdJs8FX0mPniZWgFxshaX1GJ1dUWbv3ySRKWIIIkq9QrVSQVdqrMeTSJrC
+      dnwbu9vHxtI8n925j8NsUKjBzc8/o5xKIzmsJOIxrHYny/OzyA4vplqKf3rnGuvr69QzaTxt
+      YZbnl6C4w3u3lvD7PFRy++QrCh+//w6SJPDbj65iF2pkFYnZu7fIaxZagx7A4M7tm8QTSWYm
+      76HUq2zsFlDLacqKSLWYJp7YJ7OzimELsLmyiNtU4cOHu8hKBs1kw06Zf/zF+2ysbzB0YvBr
+      A7bJs8vjNcLOXzr6f2w/z6Xz3TxcWKFeziEBhWIOm8XGgiJy+mwX7/7ql3SMXMZq2mBvb5+F
+      jUkCXhelfJ7ZB3fo7+/j2u1JrFRZit/gJ1dGKOdSuLoGKOXzfH71E04P9/L5vVWcgV4e3PqY
+      ZKqCt6UF2e5koK+X5c09HFKDhGrj1Tff+lJrBV64/D0A3nk3xamzF3nnnXcQqg6W78/gtpgI
+      uWUayKxtf4xutVDOitRzNT7ZqtPWkuStK6MoSgPvFy7gTZ4bvvV9PzbQyfxaDKvVil7Rqelm
+      OqPtiFYvWqGM0+km0tFFNrGK1eEglysTDoVwOSzYDAHdDE6nC4uwj2JYCfokBMnM6fMvUMok
+      sNg9hIJ2lpdWkWQbIb+HhtCCxVykpacPNb/Lxl4WCw3quHFYDoOVDZXbdx5y6dL5o7a67Wbu
+      3LrOwOg4azOztIRCOK1m3BaoGyaCLXZ2UwW6uoPU92pY9hP09/eCIDE8epIr58aYnJrCKRm0
+      DJ3C2ZwNPfMcGcG1Wg2tVuTmw3kuXbjwRHeC86ldFlfW6R8/j99h/vYLAEOtU2yA297UdG/y
+      b+d4enRNJZ7YpbWtg2+xd5s0eSY4nh69nGJ+a5/0boxMWeOlV15kY3aC3XyDtmjXUeC6ARia
+      hmgyHaQZ11WqdRWn3YaiqmBoKLqI02qiUGngspnIlxuE/B4SqzMsZmTOdkn8pw8WGI/a6bv4
+      Ekohh9fjQpJtKPUK5VIJp8fBjasTXH7xHHNTU9QMeOnKZQASa7PMrO1z6tIVGjvzzCXKjAwP
+      45INZLsbQ1MOV5ZAM3T0Rg1BtmMSD4LALDYbv/zn/xePx0f36HkiATeGpmK325/wLWjyNPna
+      LNfpcjP8hUYYML8W58rFMyxu7TI7eQ8TUKwUGBocZWs3A0oFtV4l7JaJ5RS8rVGC5gY3bs8x
+      PNKGydlOl1fknXc+ZujsaQIOmVrDja4b+OwiK7Ek/p4d7n78Hr7oEGbZArpILR+nYMgU1lew
+      BoJcPHfuWDuDHQO83DGALMvkPT7U1V3K6S0mYkUEtYShadgkKBZLtA2Poya3mdlM09UaQMTg
+      zbffRrI6efnSKf7pvQ9p6R6ltL/NT3/yoyfR702+Izx2oiPLMvKhUmJfe5DZlW3y+TxKpUC2
+      WMXuCXBqfJhqIUWh0kBTamTLGl63i7NnT7Ozs0trKEBX7wDrc7MsbGzR1RFBMsvk8kVMJglB
+      lOg9MU5mZ5PY+jrtXd3Ygn1szd7nRF+YCk6cNpH27j5KmSTmwzatzk1SqOuYZRmLLCMAqiHg
+      89iJ72bQa0XMFjt6vUQqV8bm9HFmpJeddJGg10OHz0bD4kEUBJRKgWu3Jzk5Pk4yvkFDF3j4
+      4AEPHj54kvegyVPkyAYwDAOtmuOjW9O89spLf9BO8N07d7lw8cK3n/gtqLUSd6eWuXzxzDee
+      k0js0Nra9o3HmzT5QzgulG0Yh3JBYjMQpMlzwbHnvFra5xfvfcz37efuAAAD90lEQVT8zCS3
+      7kygArfv3MYwDG7fuv37laiW+ddf/Iqrn32OeqBBwdzc3NHh+OoSuZryjZdPTT5k4sEDvlia
+      SqzOc/3mbUoNnVIqxieffc7t+1NM3L1N47D8tZn7JEuPlGPye5usbWyysrVHOZPgk2vX2Yjt
+      HqtndXGemqb/ft+pyTPLY0MiR7rCADidziOh7NXNHfoiDu4u7NIetCGjYrI40O1OTKKLyu4S
+      dVsLP3vzDO9+OkOPT2V5J0tD9GExVXEKNeZX9hg7MYBhl1iYXqCjo4OWjm4K+SLV5CZ1Wwtv
+      vnT+qG6AUql09Pnqu+9w/u0fcvP999AMkE06SysxOqNhiqqFkaiH6e0iLwwESJRFaoadi30u
+      Pr07z9lTo1y99hmiKCKIJjr8Tmq6SlWwU83sYULn9b/4Oe7mtsJzxWNn+k6n8+gHiNnG2bNn
+      cVlNbO3s43VawGyluyNMraHSM9hPbXeDPG5EvQ5ALr3HVqpMyG3nwpXLSIZOQzF44cUrWCWB
+      Wq1O38gZzl24yPSNj+iKhijiRtTqR3Vvb6xRU/RjbenuDPPwwQyKcJAusa5onLt0GY/dglkU
+      kL1tOOt7xDJlDEM/UJE0W+ntivDg4SSeQIRQOERL0IOu6+gIXHzhMg6nk7aQm+2NNXZiW8T2
+      80+m95s8dY69AdRymvc/n+at1189So/eaDQwm80oioKmKhiChCSJSALouoFkNqGpOo16DbPF
+      gsVsolAoIlvtmEQDQTKjqQqSKFCu1LBZLYgmiXKpjN3hRKnXsNpslEulg+sPV59WV1fp7e09
+      5tVpGAblUhGLzYGha0dlWq0WRFFEVTXq9TpOh40DmS8BsyRQLJawOZyHXqSHX5yD/QyT2Yyq
+      fLFncCjzKkrIh56mTZ5tjgbAQTqSJk2eL46nRy+l+M31SUZ72shXNU6dHmNuaorx8XGmpqY5
+      derktxaY2lqhIrvJJLOcHh/6ylGDudkpdE0kvrXMC2/8DI/1T/2VmjT5/TmeHl1XCbd34fV7
+      8AgCJmBrbYFavc7KegxZaDC3kaTFLWH1dRCw6tyaXCESdCDrdYIjLyGnd/jPN6/y87/5C95/
+      7z1MdjcWvUIwOsCJ3naC3gCSK4Ck5NCbiaeaPGUe6/AbDIUefTDbOH/+PHu7eywsLpEpKIwP
+      nmViZpkds0IhnUV2mPjeQJi1QpUIIgP9XaytLIHspZTZpSRKnG1rAcFEuL0DgP0n8vWaNPnd
+      fG0AbK2vcH6k/8gIvnL5RQTgxRevUCvn0U0ObJLKxYsB3LJOqSHicllxWc2MGRbM+knCIzYq
+      hTxqrYTsHkcsbvHx7Vl+8uqBP4+u1lnd2CbSFGZp8pT5/wE6N+/IKrHd/wAAAABJRU5ErkJg
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
